@@ -235,6 +235,7 @@
   background-color: black;
   padding: 20px;
   margin-bottom: 0px;
+  z-index: 12;
   visibility: hidden;
 }
 .search-toggle {
@@ -357,10 +358,9 @@
 }
 .img-layer {
   width: 100%;
-  height: 85vh;
+  height: 775px;
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
   background-size: cover;
   padding-top: 100px;
   position: relative;
@@ -410,8 +410,8 @@
   background-color: white;
   padding: 50px;
   position: absolute;
-  bottom: -10%;
-  right: 20%;
+  bottom: -20%;
+  right: 12%;
   display: flex;
   animation: fadeInRight 1s ease;
 }
@@ -419,12 +419,14 @@
   .main-slide-right-text {
     position: absolute;
     right: 10%;
+    bottom: -20%;
   }
 }
 @media (max-width: 1200px) {
   .main-slide-right-text {
     position: absolute;
     right: 5%;
+    bottom: -20%;
   }
 }
 @media (max-width: 1100px) {
@@ -457,7 +459,10 @@
   .main-slide-right-text {
     height: 250px;
     padding: 45px;
+    position: absolute;
+    bottom: -10%;
   }
+
 }
 
 .mstext-box {
@@ -495,6 +500,11 @@
   height: 925px;
   padding-top: 150px;
   padding-bottom: 100px;
+}
+@media (max-width: 1000px) {
+  .featuresection1{
+height: 1750px;
+  }
 }
 .textsection {
   width: 100%;
@@ -551,15 +561,13 @@
   flex-direction: column;
   flex-wrap: wrap;
 }
-.row {
-  width: 1200px;
-  height: 398px;
-}
+
 .turndiv {
   height: 356px;
   padding: 0px 30px;
   margin-bottom: 42px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   position: relative;
 }
@@ -580,6 +588,7 @@
   border-radius: 50%;
   position: relative;
   z-index: 10;
+  background-color: transparent;
 }
 
 .inner {
@@ -601,8 +610,8 @@
 }
 .inner i{
  color: #da3c22;
- z-index: 10;
 }
+
 .dbcircle-1{
 width: 32px;
 height: 32px;
@@ -637,6 +646,7 @@ top: -18px;
   animation: circlearound 3s infinite ease;
   animation-play-state: running;
   transition: linear;
+  box-shadow: black;
 }
 
 .innerover {
@@ -660,7 +670,208 @@ top: -18px;
 .iconholder:hover .innerover{
   animation: grow 1s ease;
   visibility: visible;
+  
 }
 .iconholder:hover .inner i{
   color: white;
+}
+
+.textholder{
+  text-align: center;
+}
+.textholder h3{
+  font-size: 32px;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  line-height: 34px;
+  margin-bottom: 22px;
+  color: rgb(12, 21, 41);
+}
+.textholder p{
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28px;
+  color: rgb(128, 128, 128);
+  font-family: "Rubik", sans-serif;
+}
+.meat{
+  width: 74px;
+  height: 74px;
+}
+.col-xl-6{
+  width: 100%;
+}
+.aboutstyle{
+  width: 100%;
+  display: flex;
+}
+.aboutstyle-img{
+  display: block;
+  max-width: 530px;
+  height: 595px;
+  width: 100%;
+  padding-left: 35px;
+  position: relative;
+}
+.mainimg{
+  position: absolute;
+  top: 0;
+}
+.shape1{
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  opacity: 0.3;
+  animation: wave infinite 7s;
+}
+.shape2{
+  position: absolute;
+  top: 20%;
+  right: 7%;
+  opacity: 0.3;
+  animation: updown infinite 3s;
+}
+.shape3{
+  position: absolute;
+  top: 40%;
+  right: -3%;
+  opacity: 0.3;
+}
+.shape4{
+  position: absolute;
+  bottom: 20%;
+  left: -1%;
+  opacity: 0.3;
+  animation: updown2 infinite 3s;
+}
+.shape5{
+  position: absolute;
+  bottom: 7%;
+  left: -3%;
+  opacity: 0.3;
+  animation: lefttoright 3s;
+}
+.about-image-2{
+  border: 12px white solid;
+  position: absolute;
+  bottom: -10%;
+  right: 4%;
+  animation: grow 3s;
+}
+
+@keyframes lefttoright{
+0%{
+  position: absolute;
+  left:-20%;
+}
+100%{
+  position: absolute;
+  left: -3%;
+}
+}
+
+@keyframes wave{
+  0%{
+    transform: rotate(0);
+  }
+  50%{
+    transform: rotate(30deg);
+  }
+  100%{
+    transform: rotate(0);
+  }
+}
+@keyframes updown{
+  0%{
+    position: absolute;
+    top: 20%;
+  }
+  50%{
+    position: absolute;
+    top: 18%;
+  }
+  100%{
+    position: absolute;
+    top: 20%;
+  }
+}
+@keyframes updown2{
+  0%{
+    position: absolute;
+    bottom: 20%;
+  }
+  50%{
+    position: absolute;
+    bottom: 18%;
+  }
+  100%{
+    position: absolute;
+    bottom: 20%;
+  }
+}
+.subtitle{ width: 100%;
+  display: flex;
+  align-items: center;
+  height: 54px;
+  padding-bottom: 26px;}
+
+
+.subtitle h4{
+  color: #da3c22;
+  font-size: 18px;
+  letter-spacing: 4.8px;
+  line-height: 28px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  margin: 0px;
+}
+.subtitle span{
+  background-color: #da3c22;
+  width: 25px;
+  height: 2px;
+  margin-left: 15px;
+}
+.styletext h2 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 53px;
+  font-weight: 800;
+  line-height: 52px;
+  color: rgb(12, 21, 41);
+ margin-bottom: 30px;
+}
+.styletext p {
+  color: rgb(128, 128, 128);
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 28px; 
+}
+.styletext button {
+  background-color: rgb(218, 60, 34);
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  padding: 0px 40px;
+  width: 181px;
+  height: 60px;
+  line-height: 60px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  border: none;
+}
+.stylecol{
+  height: 750px;
+}
+.outerlayer{
+  width: 100%;
+  background-image: url(http://mehedi.asiandevelopers.com/corvex/assets/images/shape/shape-bg-1.png);
+  height: 1265px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 250px;
+  position: relative;
+  text-align: center;
+}
+.sec-title{
+  width: 100%;
 }
