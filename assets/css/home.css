@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-*{
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -66,11 +67,7 @@
   display: flex;
   align-items: center;
 }
-.container {
-  position: relative;
-  display: flex;
-  justify-content: space-evenly;
-}
+
 .header-top-right {
   position: relative;
   width: 609px;
@@ -140,57 +137,530 @@
     display: none;
   }
 }
-.navbar{
-    width: 100%;
-    height: 110px;
-    display: flex;
+.navbar {
+  width: 100%;
+  height: 110px;
+  display: flex;
 }
-.header-left{
-    width: 290px;
-    height: 110px;
-    display: flex;
-    align-items: center;
+.header-left {
+  width: 290px;
+  height: 110px;
+  display: flex;
+  align-items: center;
 }
-.navigation{
-    width: 580px;
+.navigation {
+  width: 580px;
 }
 .navigation ul {
-    list-style: none;
-    display: flex;
-    margin: 0px;
+  list-style: none;
+  display: flex;
+  margin: 0px;
 }
-.outer{
-    display: flex;
+.outer {
+  display: flex;
 }
-.header-middle{
-    display: flex;
-    align-items: center;
+.header-middle {
+  display: flex;
+  align-items: center;
 }
 .navigation li {
-    margin-right: 25px;
+  margin-right: 25px;
 }
-.navigation{
-    display: flex;
-    align-items: center;
-    font-family: "Rubik", sans-serif;
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 500;
+.navigation {
+  display: flex;
+  align-items: center;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
 }
-.navcolor{
-    background-color: transparent;
-    color: black;
-text-decoration: none;
+.menu {
+  background-color: #da3c22;
+  color: white;
+  width: 40px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
 }
 
-.home{
-color: rgb(218, 60, 34);
+@media (max-width: 1200px) {
+  .menu {
+    visibility: visible;
+  }
+  .navigation {
+    display: none;
+  }
+  .outer {
+    display: flex;
+    justify-content: space-between;
+  }
 }
-.navcolor:hover{
-    color: rgb(218, 60, 34);
-    text-decoration: none;
+
+.navcolor {
+  background-color: transparent;
+  color: rgb(12, 21, 41);
+  text-decoration: none;
 }
-.home:hover{
-    text-decoration: none;
-    color: black;
+
+.home {
+  color: rgb(218, 60, 34);
+}
+.navcolor:hover {
+  color: rgb(218, 60, 34);
+  text-decoration: none;
+}
+.home:hover {
+  text-decoration: none;
+  color: black;
+}
+.header-right {
+  width: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+.header-right ul {
+  list-style: none;
+}
+.search {
+  width: 290px;
+  height: 85px;
+  display: flex;
+  position: absolute;
+  top: 101.5px;
+  right: 80px;
+  background-color: black;
+  padding: 20px;
+  margin-bottom: 0px;
+  visibility: hidden;
+}
+.search-toggle {
+  cursor: pointer;
+}
+
+.search li {
+  height: 43px;
+}
+.search-box {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-box a {
+  color: rgb(12, 21, 41);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+#hr-search {
+  width: 205px;
+  height: 43px;
+  padding: 0px 50px 0px 15px;
+  border: 1px solid black;
+  font-size: 13px;
+  border-style: none;
+}
+#hr-s-btn {
+  height: 45px;
+  width: 45px;
+  background-color: rgba(0, 0, 0, 0.95);
+  border: none;
+  color: white;
+}
+#hr-s-btn:hover {
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+}
+.user-btn i {
+  color: rgb(12, 21, 41);
+}
+.header-cart-btn i {
+  color: rgb(12, 21, 41);
+}
+.header-cart-btn span {
+  color: rgb(12, 21, 41);
+}
+.user-btn {
+  margin-right: 20px;
+}
+.search-box {
+  margin-right: 20px;
+}
+.header-cart-btn {
+  position: relative;
+}
+.header-cart-btn span {
+  position: absolute;
+  bottom: 90%;
+  left: 90%;
+  border-radius: 50%;
+  background-color: #da3c22;
+  width: 20px;
+  color: white;
+  height: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-box:hover .search {
+  visibility: visible;
+  transition: 1s;
+  animation: fadeIndown 1s ease backwards;
+  display: block;
+}
+
+@keyframes fadeIndown {
+  0% {
+    transform: translate(0px, -50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px, 0);
+    opacity: 1;
+  }
+}
+@keyframes fadeIndown2 {
+  0% {
+    transform: translate(0px, -100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px, 0);
+    opacity: 1;
+  }
+}
+@keyframes fadeInup {
+  0% {
+    transform: translate(0px, 100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px, 0);
+    opacity: 1;
+  }
+}
+.img-layer {
+  width: 100%;
+  height: 85vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 100px;
+  position: relative;
+}
+.content {
+  width: 100%;
+}
+
+.big-title h2 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 96px;
+  font-weight: 800;
+  line-height: 96px;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 25px;
+  animation: fadeIndown2 1s ease backwards;
+}
+.content h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #ffffff;
+  animation: fadeInup 2s ease;
+}
+.content-btn {
+  padding-top: 45px;
+}
+.content-btn button {
+  background-color: rgb(218, 60, 34);
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  padding: 0px 40px;
+  width: 181px;
+  height: 60px;
+  line-height: 60px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  border: none;
+  animation: fadeInup 3s ease;
+}
+.main-slide-right-text {
+  max-width: 670px;
+  width: 100%;
+  height: 400px;
+  background-color: white;
+  padding: 50px;
+  position: absolute;
+  bottom: -10%;
+  right: 20%;
+  display: flex;
+  animation: fadeInRight 1s ease;
+}
+@media (max-width: 1300px) {
+  .main-slide-right-text {
+    position: absolute;
+    right: 10%;
+  }
+}
+@media (max-width: 1200px) {
+  .main-slide-right-text {
+    position: absolute;
+    right: 5%;
+  }
+}
+@media (max-width: 1100px) {
+  .main-slide-right-text {
+    position: absolute;
+    right: 0%;
+  }
+
+  .big-title h2 {
+    font-size: 64px;
+    margin-bottom: 10px;
+  }
+  .content h3 {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .content-btn {
+    padding-top: 25px;
+  }
+
+  .content-btn button {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .main-slide-right-text img {
+    display: none;
+  }
+  .main-slide-right-text {
+    height: 250px;
+    padding: 45px;
+  }
+}
+
+.mstext-box {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  flex-direction: column;
+}
+.mstext-box h3 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 22px;
+  color: rgb(12, 21, 41);
+}
+.mstext-box p {
+  color: rgb(128, 128, 128);
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: left;
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(500px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.featuresection1 {
+  width: 100%;
+  height: 925px;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+.textsection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sub-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 54px;
+  padding-bottom: 26px;
+}
+.sub-title h4 {
+  color: #da3c22;
+  font-size: 18px;
+  letter-spacing: 4.8px;
+  line-height: 28px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  margin: 0px;
+}
+.sleft {
+  background-color: #da3c22;
+  width: 20px;
+  height: 2px;
+  margin-right: 20px;
+}
+.sright {
+  background-color: #da3c22;
+  width: 20px;
+  height: 2px;
+  margin-left: 20px;
+}
+.textsection h2 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 53px;
+  font-weight: 800;
+  line-height: 52px;
+  color: rgb(12, 21, 41);
+  text-align: center;
+}
+.textsection p {
+  color: rgb(128, 128, 128);
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+}
+.textcontainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.row {
+  width: 1200px;
+  height: 398px;
+}
+.turndiv {
+  height: 356px;
+  padding: 0px 30px;
+  margin-bottom: 42px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.iconholder {
+  padding: 3px;
+  width: 180px;
+  margin-bottom: 35px;
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 182px;
+  position: relative;
+}
+.dotted-box {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border: 2px solid #da3c22;
+  border-radius: 50%;
+  position: relative;
+  z-index: 10;
+}
+
+.inner {
+  width: 180px;
+  height: 182px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 2px;
+  overflow: hidden;
+}
+.inner span i{
+  width: 74px;
+  height: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner i{
+ color: #da3c22;
+ z-index: 10;
+}
+.dbcircle-1{
+width: 32px;
+height: 32px;
+background-color: #da3c22;
+border-radius: 50%;
+border: 3px white solid;
+position: absolute;
+left: 70px;
+top: -18px;
+}
+.dbcircle-2{
+  width: 32px;
+  height: 32px;
+  background-color: #da3c22;
+  border-radius: 50%;
+  border: 3px white solid;
+  position: absolute;
+  left: 70px;
+  bottom: -18px;
+}
+
+@keyframes circlearound {
+	0% {
+		transform: rotate(0deg)
+	}
+
+	100% {
+		transform: rotate(360deg)
+	}
+}
+.dotted-box:hover{
+  animation: circlearound 3s infinite ease;
+  animation-play-state: running;
+  transition: linear;
+}
+
+.innerover {
+  position: absolute;
+  top: 2px;
+  width: 180px;
+  height: 180px;
+  background-color: #da3c22;
+  z-index: -5;
+  border-radius: 50%;
+  visibility: hidden;
+}
+@keyframes grow{
+  0%{
+    transform: scale(0,0);
+  }
+  100%{
+    transform: scale(1,1);
+  }
+}
+.iconholder:hover .innerover{
+  animation: grow 1s ease;
+  visibility: visible;
+}
+.iconholder:hover .inner i{
+  color: white;
 }

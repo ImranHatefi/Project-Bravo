@@ -23,6 +23,12 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/home.css" />
     <title>Corvex - Butcher & Meat Shop</title>
   </head>
@@ -63,74 +69,196 @@
           </div>
           <div class="header-top-right float-right">
             <div class="header-contact">
-                <ul>
-                    <li>
-                        <i class="fa-solid fa-location-dot"></i>
-                        <a href="#">Find A Location</a>
-                    </li>
-                    <li>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-envelope-open"></i>
-                        <a href="#">info@example.com</a>
-                    </li>
-                    <li></li>
-                    <li>
-                        <i class="fa-solid fa-phone"></i>
-                        <span>Call us: </span>
-                        <a href="#">333-666-0001</a>
-                    </li>
-                </ul>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  <a href="#">Find A Location</a>
+                </li>
+                <li></li>
+                <li>
+                  <i class="fa-solid fa-envelope-open"></i>
+                  <a href="#">info@example.com</a>
+                </li>
+                <li></li>
+                <li>
+                  <i class="fa-solid fa-phone"></i>
+                  <span>Call us: </span>
+                  <a href="#">333-666-0001</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
     <div class="navbar">
-        <div class="container">
-            <div class="outer-box outer clearfix">
-                <div class="header-left clearfix">
-                    <div class="logo">
-                        <a href="#">
-                            <img src="http://mehedi.asiandevelopers.com/corvex/assets/images/resources/logo.png" alt="logo...">
-                        </a>
-                    </div>
-                </div>
-                <div class="header-middle clearfix pull-left">
-                    <div class="menu"></div>
-                    <div class="navigation">
-                        <ul>
-                            <li>
-                                <a class="home" href="#">
-                                    Home 
-                                    <i class="fa-solid fa-caret-down"></i>
-                                </a>
-                            </li>
-                            <li><a class="navcolor" href="#">
-                                About Us
-                            </a></li>
-                            <li><a class="navcolor" href="#">
-                                Shop
-                                <i class="fa-solid fa-caret-down"></i>
-                            </a></li>
-                            <li><a class="navcolor" href="#">
-                                Pages
-                                <i class="fa-solid fa-caret-down"></i>
-                            </a></li>
-                            <li><a class="navcolor" href="#">
-                                News
-                                <i class="fa-solid fa-caret-down"></i>
-                            </a></li>
-                            <li><a class="navcolor" href="#">
-                                Contact
-                            </a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="header-right clearfix pull-right"></div>
+      <div class="container">
+        <div class="outer-box outer clearfix">
+          <div class="header-left clearfix">
+            <div class="logo">
+              <a href="#">
+                <img
+                  src="http://mehedi.asiandevelopers.com/corvex/assets/images/resources/logo.png"
+                  alt="logo..."
+                />
+              </a>
             </div>
-
+          </div>
+          <div class="header-middle clearfix pull-left">
+            <div class="menu">
+              <i class="fa-solid fa-xl fa-bars"></i>
+            </div>
+            <div class="navigation">
+              <ul>
+                <li>
+                  <a class="home" href="#">
+                    Home
+                    <i class="fa-solid fa-caret-down"></i>
+                  </a>
+                </li>
+                <li><a class="navcolor" href="#"> About Us </a></li>
+                <li>
+                  <a class="navcolor" href="#">
+                    Shop
+                    <i class="fa-solid fa-caret-down"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="navcolor" href="#">
+                    Pages
+                    <i class="fa-solid fa-caret-down"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="navcolor" href="#">
+                    News
+                    <i class="fa-solid fa-caret-down"></i>
+                  </a>
+                </li>
+                <li><a class="navcolor" href="#"> Contact </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="header-right clearfix pull-right">
+            <div class="search-box">
+              <div class="search-toggle">
+                <i class="fa-solid fa-xl fa-magnifying-glass mglass"></i>
+              </div>
+              <ul class="search">
+                <li>
+                  <form method="post" action="index.html">
+                    <div class="form-group">
+                      <input
+                        type="search"
+                        name="search"
+                        id="hr-search"
+                        placeholder="Search Here"
+                        required=""
+                      />
+                      <button type="submit" id="hr-s-btn">
+                        <i class="fa fa-search"></i>
+                      </button>
+                    </div>
+                  </form>
+                </li>
+              </ul>
+            </div>
+            <div class="user-btn">
+              <a href="#">
+                <i class="fa-solid fa-xl fa-user"></i>
+              </a>
+            </div>
+            <div class="header-cart-btn">
+              <a href="#">
+                <i class="fa-solid fa-xl fa-cart-shopping"></i
+                ><span class="count">3</span>
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+    <div
+      class="img-layer"
+      style="
+        background-image: url(http://mehedi.asiandevelopers.com/corvex/assets/images/slides/slide-v1-2.jpg);
+      "
+    >
+      <div class="container">
+        <div class="content">
+          <div class="big-title fadeindown">
+            <h2>
+              Enjoy Delicious
+              <br />
+              Organic Meat.
+            </h2>
+          </div>
+          <h3>Discover your next great adventure.</h3>
+          <div class="content-btn">
+            <button>
+              <span>Learn More</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="main-slide-right-text">
+        <div class="mstext-box">
+          <h3>
+            A True Premier <br />
+            Organic Meat
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet contur adipiscing elit. vamus lacinia
+            odio vitae vestibulum vestibulum.
+          </p>
+        </div>
+
+        <img
+          src="http://mehedi.asiandevelopers.com/corvex/assets/images/slides/slider-content-image.jpg"
+          alt="img..."
+        />
+      </div>
+    </div>
+    <div class="featuresection1">
+      <div class="container textcontainer">
+        <div class="textsection">
+          <div class="sub-title">
+            <span class="sleft"> </span>
+            <h4>FEATURES</h4>
+            <span class="sright"> </span>
+          </div>
+          <h2>
+            Genuine Meat Production <br />
+            By Corvex Farm
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet contur adipiscing elit. vamus lacinia
+            <br />
+            odio vitae vestibulum vestibulum.
+          </p>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-xl-4 col-lg-4">
+            <div class="turndiv">
+              <div class="iconholder">
+                <div class="dotted-box">
+                  <div class="dbcircle-1"></div>
+                  <div class="dbcircle-2"></div>
+                </div>
+                <div class="inner">
+                  <div class="innerover"></div>
+                  <span><i class="fa-solid fa-2xl fa-cart-shopping"></i
+                    ></span>
+                </div>
+              </div>
+              <div class="textholder"></div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4"><div class="turndiv"></div></div>
+          <div class="col-xl-4 col-lg-4"><div class="turndiv"></div></div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
