@@ -13,10 +13,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.container {
-  font-family: "Rubik", sans-serif;
-  display: flex;
-}
+
 .outer-box {
   width: 100%;
   text-align: center;
@@ -462,7 +459,6 @@
     position: absolute;
     bottom: -10%;
   }
-
 }
 
 .mstext-box {
@@ -502,8 +498,8 @@
   padding-bottom: 100px;
 }
 @media (max-width: 1000px) {
-  .featuresection1{
-height: 1750px;
+  .featuresection1 {
+    height: 1750px;
   }
 }
 .textsection {
@@ -601,28 +597,28 @@ height: 1750px;
   top: 2px;
   overflow: hidden;
 }
-.inner span i{
+.inner span i {
   width: 74px;
   height: 74px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.inner i{
- color: #da3c22;
+.inner i {
+  color: #da3c22;
 }
 
-.dbcircle-1{
-width: 32px;
-height: 32px;
-background-color: #da3c22;
-border-radius: 50%;
-border: 3px white solid;
-position: absolute;
-left: 70px;
-top: -18px;
+.dbcircle-1 {
+  width: 32px;
+  height: 32px;
+  background-color: #da3c22;
+  border-radius: 50%;
+  border: 3px white solid;
+  position: absolute;
+  left: 70px;
+  top: -18px;
 }
-.dbcircle-2{
+.dbcircle-2 {
   width: 32px;
   height: 32px;
   background-color: #da3c22;
@@ -634,15 +630,15 @@ top: -18px;
 }
 
 @keyframes circlearound {
-	0% {
-		transform: rotate(0deg)
-	}
+  0% {
+    transform: rotate(0deg);
+  }
 
-	100% {
-		transform: rotate(360deg)
-	}
+  100% {
+    transform: rotate(360deg);
+  }
 }
-.dotted-box:hover{
+.dotted-box:hover {
   animation: circlearound 3s infinite ease;
   animation-play-state: running;
   transition: linear;
@@ -659,27 +655,26 @@ top: -18px;
   border-radius: 50%;
   visibility: hidden;
 }
-@keyframes grow{
-  0%{
-    transform: scale(0,0);
+@keyframes grow {
+  0% {
+    transform: scale(0, 0);
   }
-  100%{
-    transform: scale(1,1);
+  100% {
+    transform: scale(1, 1);
   }
 }
-.iconholder:hover .innerover{
+.iconholder:hover .innerover {
   animation: grow 1s ease;
   visibility: visible;
-  
 }
-.iconholder:hover .inner i{
+.iconholder:hover .inner i {
   color: white;
 }
 
-.textholder{
+.textholder {
   text-align: center;
 }
-.textholder h3{
+.textholder h3 {
   font-size: 32px;
   font-family: "League Spartan", sans-serif;
   font-weight: 700;
@@ -687,25 +682,25 @@ top: -18px;
   margin-bottom: 22px;
   color: rgb(12, 21, 41);
 }
-.textholder p{
+.textholder p {
   font-size: 17px;
   font-weight: 400;
   line-height: 28px;
   color: rgb(128, 128, 128);
   font-family: "Rubik", sans-serif;
 }
-.meat{
+.meat {
   width: 74px;
   height: 74px;
 }
-.col-xl-6{
+.col-xl-6 {
   width: 100%;
 }
-.aboutstyle{
+.aboutstyle {
   width: 100%;
   display: flex;
 }
-.aboutstyle-img{
+.aboutstyle-img {
   display: block;
   max-width: 530px;
   height: 595px;
@@ -713,45 +708,45 @@ top: -18px;
   padding-left: 35px;
   position: relative;
 }
-.mainimg{
+.mainimg {
   position: absolute;
   top: 0;
 }
-.shape1{
+.shape1 {
   position: absolute;
   top: -10%;
   left: -10%;
   opacity: 0.3;
   animation: wave infinite 7s;
 }
-.shape2{
+.shape2 {
   position: absolute;
   top: 20%;
   right: 7%;
   opacity: 0.3;
   animation: updown infinite 3s;
 }
-.shape3{
+.shape3 {
   position: absolute;
   top: 40%;
   right: -3%;
   opacity: 0.3;
 }
-.shape4{
+.shape4 {
   position: absolute;
   bottom: 20%;
   left: -1%;
   opacity: 0.3;
   animation: updown2 infinite 3s;
 }
-.shape5{
+.shape5 {
   position: absolute;
   bottom: 7%;
   left: -3%;
   opacity: 0.3;
   animation: lefttoright 3s;
 }
-.about-image-2{
+.about-image-2 {
   border: 12px white solid;
   position: absolute;
   bottom: -10%;
@@ -759,64 +754,65 @@ top: -18px;
   animation: grow 3s;
 }
 
-@keyframes lefttoright{
-0%{
-  position: absolute;
-  left:-20%;
-}
-100%{
-  position: absolute;
-  left: -3%;
-}
+@keyframes lefttoright {
+  0% {
+    position: absolute;
+    left: -20%;
+  }
+  100% {
+    position: absolute;
+    left: -3%;
+  }
 }
 
-@keyframes wave{
-  0%{
+@keyframes wave {
+  0% {
     transform: rotate(0);
   }
-  50%{
+  50% {
     transform: rotate(30deg);
   }
-  100%{
+  100% {
     transform: rotate(0);
   }
 }
-@keyframes updown{
-  0%{
+@keyframes updown {
+  0% {
     position: absolute;
     top: 20%;
   }
-  50%{
+  50% {
     position: absolute;
     top: 18%;
   }
-  100%{
+  100% {
     position: absolute;
     top: 20%;
   }
 }
-@keyframes updown2{
-  0%{
+@keyframes updown2 {
+  0% {
     position: absolute;
     bottom: 20%;
   }
-  50%{
+  50% {
     position: absolute;
     bottom: 18%;
   }
-  100%{
+  100% {
     position: absolute;
     bottom: 20%;
   }
 }
-.subtitle{ width: 100%;
+.subtitle {
+  width: 100%;
   display: flex;
   align-items: center;
   height: 54px;
-  padding-bottom: 26px;}
+  padding-bottom: 26px;
+}
 
-
-.subtitle h4{
+.subtitle h4 {
   color: #da3c22;
   font-size: 18px;
   letter-spacing: 4.8px;
@@ -825,7 +821,7 @@ top: -18px;
   font-family: "Rubik", sans-serif;
   margin: 0px;
 }
-.subtitle span{
+.subtitle span {
   background-color: #da3c22;
   width: 25px;
   height: 2px;
@@ -837,14 +833,14 @@ top: -18px;
   font-weight: 800;
   line-height: 52px;
   color: rgb(12, 21, 41);
- margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 .styletext p {
   color: rgb(128, 128, 128);
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  margin-bottom: 28px; 
+  margin-bottom: 28px;
 }
 .styletext button {
   background-color: rgb(218, 60, 34);
@@ -858,20 +854,264 @@ top: -18px;
   font-family: "Rubik", sans-serif;
   border: none;
 }
-.stylecol{
+.stylecol {
   height: 750px;
 }
-.outerlayer{
+.outerlayer {
   width: 100%;
   background-image: url(http://mehedi.asiandevelopers.com/corvex/assets/images/shape/shape-bg-1.png);
   height: 1265px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding-top: 250px;
   position: relative;
   text-align: center;
 }
-.sec-title{
+.productstyle-area {
   width: 100%;
+  padding: 150px 0px;
+}
+.sec-title {
+  width: 100%;
+}
+.sec-title h2 {
+  color: rgb(12, 21, 41);
+  font-family: "League Spartan", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 52px;
+  margin-bottom: 18px;
+  text-align: center;
+}
+.sec-title p {
+  color: rgb(128, 128, 128);
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 28px;
+}
+.product-content {
+  position: relative;
+}
+.shape6 {
+  position: absolute;
+  bottom: 0%;
+  left: -12%;
+  opacity: 0.3;
+  animation: zoomInOut infinite 3s;
+}
+.shape7{
+  position: absolute;
+  top: -20%;
+  left: -7%;
+  opacity: 0.3;
+  animation: updown3 infinite 1.5s ease;
+}
+.shape8 {
+  position: absolute;
+  top: -25%;
+  right: -25%;
+  opacity: 0.3;
+  animation: righttoleft 3s;
+}
+
+
+@keyframes updown3 {
+  0% {
+    position: absolute;
+    top: -20%;
+  }
+  50% {
+    position: absolute;
+    top: -18%;
+  }
+  100% {
+    position: absolute;
+    top: -20%;
+  }
+}
+
+@keyframes righttoleft {
+  0% {
+    position: absolute;
+    right: -50%;
+  }
+  100% {
+    position: absolute;
+    right: -25%;
+  }
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: rotate(0deg) scale(0.7);
+    transform: rotate(0deg) scale(0.7);
+    opacity: 0;
+  }
+
+  50% {
+    transform: rotate(180deg) scale(1);
+    transform: rotate(180deg) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(360deg) scale(0.7);
+    transform: rotate(360deg) scale(0.7);
+    opacity: 0;
+  }
+}
+@media (max-width:1200px){
+  .shape7{
+    position: absolute;
+    top: 200%;
+  }
+  .shape8 {
+    position: absolute;
+    top: -25%;
+    right: -15%;}
+
+}
+@media (max-width:1100px){
+  .outerlayer{
+    height: 2110px;
+  }
+  .productstyle-area{
+    padding-top: 75px;
+  }
+}
+@media (max-width:768px){
+  .outerlayer{
+    height: 3370px;
+  }
+  .productstyle-area{
+    padding-top: 0px;
+  }
+}
+.outerlayer{
+  overflow: hidden;
+}
+
+
+.singleproduct{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.image-holder{
+  position: relative;
+}
+.overlayimg{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: #da3c22;
+}
+.overlayimg:hover{
+  transition: 0.7s ease;
+  opacity: 0.9;
+}
+.title-holder h4:hover{
+  transition: 0.3s ease;
+  cursor: pointer;
+ color: #da3c22;
+}
+.image-holder img{
+  width: 100%;
+  height: 100%;
+}
+.title-holder{
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  padding: 30px;
+}
+.review-box ul{
+  display:flex ;
+  list-style: none;
+  color: #fbb419;
+  margin: 0;
+}
+.product-title{
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "League Spartan", sans-serif;
+  color: rgb(34, 34, 34);
+}
+.button-box{
+  display: flex;
+}
+.other-button ul{
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+.other-button{
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.other-button li{
+  margin-left: 10px;
+  background-color: #f3f3f4;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart-button:hover{
+  background-color: #da3c22;
+  color:white ;
+}
+.cart-button button{
+  width: 113px;
+  height: 40px;
+  padding: 0px 15px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  border: none;
+  cursor: pointer;
+  background-color: #f3f3f4;
+ 
+}
+.cart-button button:hover{
+  color:white ;
+  background: linear-gradient(to left, #da3c22 50%, white 50%) right;
+  background-size: 200%;
+  transition: .5s ease-out;
+}
+.txtbutton{
+  background-color: rgb(218, 60, 34);
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  padding: 0px 40px;
+  width: 181px;
+  height: 60px;
+  line-height: 60px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  border: none;
+}
+.product-style1-button{
+  padding-top: 30px;
+}
+.video-area {
+  width: 100%;
+  height: 550px;
+}
+.layer-outer{
+  height: 450px;
+  background-image: url("http://mehedi.asiandevelopers.com/corvex/assets/images/shape/shape-bg-2.png")
+}
+.video-holder-box{
+  width: 100%;
+  height: 550px;
+  background-image: url("http://mehedi.asiandevelopers.com/corvex/assets/images/resources/video-gallery-bg.jpg")
 }
