@@ -860,7 +860,7 @@
 .outerlayer {
   width: 100%;
   background-image: url(http://mehedi.asiandevelopers.com/corvex/assets/images/shape/shape-bg-1.png);
-  height: 1265px;
+  height: 1110px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -974,7 +974,7 @@
 }
 @media (max-width:1100px){
   .outerlayer{
-    height: 2110px;
+    height: 1900px;
   }
   .productstyle-area{
     padding-top: 75px;
@@ -1110,8 +1110,258 @@
   height: 450px;
   background-image: url("http://mehedi.asiandevelopers.com/corvex/assets/images/shape/shape-bg-2.png")
 }
+.holder-box{
+  width: 100%;
+  height: 550px;
+  position: relative;
+  z-index: 1;
+}
 .video-holder-box{
   width: 100%;
   height: 550px;
-  background-image: url("http://mehedi.asiandevelopers.com/corvex/assets/images/resources/video-gallery-bg.jpg")
+  background-image: url("http://mehedi.asiandevelopers.com/corvex/assets/images/resources/video-gallery-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.play-button-shape{
+  width: 130px;
+  height: 130px;
+  background-color: #da3c22;
+  border-radius: 50%;
+  opacity: 0.7;
+  z-index: 9;
+  position: absolute;
+}
+.play-button-shape-inside{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #da3c22;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video-popup i{
+color: white;
+}
+.play-button-shape-outside{
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  opacity: 0;
+  transform: scale(0,0);
+  background-color: white;
+  border-radius: 50%;
+}
+.video-holder-box:hover .outs{
+  transform: scale(1.2, 1.2);
+  opacity: 0.3;
+  transition: ease 2s;
+}
+
+.shape10{
+  position: absolute;
+  z-index: -1;
+  right: 5%;
+  bottom: -3%;
+  opacity: 0.35;
+  animation: updownshape10 infinite 2s ease;
+}
+@keyframes updownshape10{
+  
+    0% {
+      position: absolute;
+      bottom: -3%;
+    }
+    50% {
+      position: absolute;
+      bottom: -1%;
+    }
+    100% {
+      position: absolute;
+      bottom: -3%;
+    }
+  
+}
+.faq-area{
+  width: 100%;
+  height: 935px;
+  padding: 150px 0px 120px; 
+  overflow: hidden;
+}
+.faq-content{
+  position: relative;
+}
+.accordion-box{
+  width: 100%;
+  height: 330px;
+  position: relative;
+}
+.shape12{
+  position: absolute;
+  opacity: 0.3;
+  top: 40%;
+  left: -15%;
+  animation: updownshape12 2s ease infinite;
+}
+@keyframes updownshape12{
+  
+  0% {
+    position: absolute;
+    top: 38%;
+  }
+  50% {
+    position: absolute;
+    top: 40%;
+  }
+  100% {
+    position: absolute;
+    top: 38%;
+  }
+
+}
+.accordion-block{
+  height: 90px;
+  margin-bottom: 30px;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+}
+.accordion-block h4{
+  line-height: 28px;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "League Spartan", sans-serif;
+margin: 0;
+color: #0c1529;
+}
+.accordion-block i{
+  width: 30px;
+  height: 13px;
+}
+.shape11{
+  position: absolute;
+  bottom: -10%;
+  left: -50%;
+  opacity: 0.2;
+  animation: wave2 infinite 10s;
+}
+@keyframes wave2 {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+.faq-image-box{
+  position: relative;
+  max-width: 500px;
+height: 635px;
+  width: 100%;
+  float: right;
+  padding-left: 80px;
+  padding-bottom: 215px;
+}
+.faqinner{
+  position: absolute;
+}
+.shape13{
+  position: absolute;
+  top: 15%;
+  left: -12%;
+  opacity: 0.3;
+}
+.shape14{
+position: absolute;
+bottom: 22%;
+right: 25%;
+opacity: 0.2;
+animation: zoomInOut infinite ease 3s;
+}
+@keyframes zoomInOut {
+  0% {
+    transform: rotate(0deg) scale(0.7);
+    transform: rotate(0deg) scale(0.7);
+    opacity: 0;
+  }
+
+  50% {
+    transform: rotate(180deg) scale(1);
+    transform: rotate(180deg) scale(1);
+    opacity: 0.3;
+  }
+
+  100% {
+    transform: rotate(360deg) scale(0.7);
+    transform: rotate(360deg) scale(0.7);
+    opacity: 0;
+  }
+}
+.shape15{
+  position: absolute;
+  bottom: -25%;
+  right: -70%;
+  opacity: 0.3;
+}
+.faqoverlayimage{ position: absolute;
+  left: 0;
+  bottom: 0;}
+.faqoverlayimage {
+  overflow: hidden;
+}
+  
+.faq-image-box:hover .faqoverlayimage img{
+    transform: scale(1.1) rotate(5deg);
+    transition: ease 1s;
+}
+.faqinner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.faqinnerover{
+  position: absolute;
+  z-index: -1;
+width: 100%;
+height: 420px;
+  background-color: white;
+  opacity: 0.2;
+  border-radius: 50%;
+  transform: scale(0);
+}
+.faq-image-box:hover .faqinnerover{
+  position: absolute;
+  z-index: 5;
+  animation: pulse ease 0.5s;
+  
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.1);
+	}
+
+	100% {
+		transform: scale(2);
+	}
 }
