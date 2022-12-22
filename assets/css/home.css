@@ -1386,3 +1386,112 @@ animation: zoomInOut infinite ease 3s;
     opacity: 0.3;
   }
 }
+.testimonial-area{
+  width: 100%;
+  height: 608px;
+}
+.testimonial-image-box{
+  width: 50%;
+}
+.testimonial-image-box ul{
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+.tdis{
+  display: flex;
+}
+
+.tesli{
+  padding-right: 20px;
+}
+.tesli2{
+  padding: 0px 20px;
+}
+.testimonial-text{
+  width: 50%;
+  position: relative;
+  z-index: -1;
+}
+.subtitlets {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 54px;
+  padding-bottom: 26px;
+}
+
+.subtitlets h4 {
+  color: #da3c22;
+  font-size: 18px;
+  letter-spacing: 4.8px;
+  line-height: 28px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  margin: 0px;
+}
+.subtitlets span {
+  background-color: #da3c22;
+  width: 25px;
+  height: 2px;
+  margin-left: 15px;
+}
+.sectitle h2 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 53px;
+  font-weight: 800;
+  line-height: 52px;
+  color: rgb(12, 21, 41);
+  margin-bottom: 30px;
+}
+.inner-content{
+  width: 600px;
+  padding-left: 60px;
+  padding-top: 90px;
+}
+.tes-text-box p {
+  color: #2d2929;
+  font-size: 18px;
+  line-height: 34px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+}
+.tes-client-info{
+  display: flex;
+  align-items: center;
+}
+.tes-client-info img{
+  width: 55px;
+  height: 55px;
+}
+.title-box{
+  padding-left: 15px;
+}
+.shape16{
+  position: absolute;
+  bottom: 20%;
+  left: -10%;
+  opacity: 0.3;
+  animation: infinite 5s updownshape16 ;
+}
+@keyframes updownshape16{
+  
+  0% {
+    position: absolute;
+    bottom: 20%;
+  }
+  50% {
+    position: absolute;
+    bottom: 23%;
+  }
+  100% {
+    position: absolute;
+    bottom: 20%;
+  }
+
+}
+.team-area{
+  height: 967px;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
