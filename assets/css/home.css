@@ -1193,7 +1193,6 @@ color: white;
   width: 100%;
   height: 935px;
   padding: 150px 0px 120px; 
-  overflow: hidden;
 }
 .faq-content{
   position: relative;
@@ -1325,7 +1324,8 @@ animation: zoomInOut infinite ease 3s;
 .faqoverlayimage{ position: absolute;
   left: 0;
   bottom: 0;}
-.faqoverlayimage {
+
+  .faqoverlayimage {
   overflow: hidden;
 }
   
@@ -1342,8 +1342,8 @@ animation: zoomInOut infinite ease 3s;
 .faqinnerover{
   position: absolute;
   z-index: -1;
-width: 100%;
-height: 420px;
+  width: 100%;
+  height: 420px;
   background-color: white;
   opacity: 0.2;
   border-radius: 50%;
@@ -1364,4 +1364,25 @@ height: 420px;
 	100% {
 		transform: scale(2);
 	}
+}
+@media (max-width:1200px){
+  .faqimgrow{
+    display: flex;
+    justify-content: start;
+  }
+  .faq-area{
+    height: 1500px;
+  }
+
+}
+@media (max-width:1100px){
+
+}
+@media (max-width:768px){
+  .shape15{
+    position: absolute;
+    bottom: -25%;
+    right: -30%;
+    opacity: 0.3;
+  }
 }
