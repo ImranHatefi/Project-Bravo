@@ -900,7 +900,7 @@
   opacity: 0.3;
   animation: zoomInOut infinite 3s;
 }
-.shape7{
+.shape7 {
   position: absolute;
   top: -20%;
   left: -7%;
@@ -914,7 +914,6 @@
   opacity: 0.3;
   animation: righttoleft 3s;
 }
-
 
 @keyframes updown3 {
   0% {
@@ -961,45 +960,44 @@
     opacity: 0;
   }
 }
-@media (max-width:1200px){
-  .shape7{
+@media (max-width: 1200px) {
+  .shape7 {
     position: absolute;
     top: 200%;
   }
   .shape8 {
     position: absolute;
     top: -25%;
-    right: -15%;}
-
+    right: -15%;
+  }
 }
-@media (max-width:1100px){
-  .outerlayer{
+@media (max-width: 1100px) {
+  .outerlayer {
     height: 1900px;
   }
-  .productstyle-area{
+  .productstyle-area {
     padding-top: 75px;
   }
 }
-@media (max-width:768px){
-  .outerlayer{
+@media (max-width: 768px) {
+  .outerlayer {
     height: 3370px;
   }
-  .productstyle-area{
+  .productstyle-area {
     padding-top: 0px;
   }
 }
-.outerlayer{
+.outerlayer {
   overflow: hidden;
 }
 
-
-.singleproduct{
+.singleproduct {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.image-holder{
+.image-holder {
   position: relative;
 }
-.overlayimg{
+.overlayimg {
   position: absolute;
   top: 0;
   height: 100%;
@@ -1012,51 +1010,51 @@
   color: #ffffff;
   background-color: #da3c22;
 }
-.overlayimg:hover{
+.overlayimg:hover {
   transition: 0.7s ease;
   opacity: 0.9;
 }
-.title-holder h4:hover{
+.title-holder h4:hover {
   transition: 0.3s ease;
   cursor: pointer;
- color: #da3c22;
+  color: #da3c22;
 }
-.image-holder img{
+.image-holder img {
   width: 100%;
   height: 100%;
 }
-.title-holder{
+.title-holder {
   display: flex;
   text-align: left;
   flex-direction: column;
   padding: 30px;
 }
-.review-box ul{
-  display:flex ;
+.review-box ul {
+  display: flex;
   list-style: none;
   color: #fbb419;
   margin: 0;
 }
-.product-title{
+.product-title {
   font-size: 24px;
   font-weight: 700;
   font-family: "League Spartan", sans-serif;
   color: rgb(34, 34, 34);
 }
-.button-box{
+.button-box {
   display: flex;
 }
-.other-button ul{
+.other-button ul {
   display: flex;
   list-style: none;
   margin: 0;
 }
-.other-button{
+.other-button {
   display: flex;
   list-style: none;
   align-items: center;
 }
-.other-button li{
+.other-button li {
   margin-left: 10px;
   background-color: #f3f3f4;
   height: 40px;
@@ -1065,11 +1063,11 @@
   justify-content: center;
   align-items: center;
 }
-.cart-button:hover{
+.cart-button:hover {
   background-color: #da3c22;
-  color:white ;
+  color: white;
 }
-.cart-button button{
+.cart-button button {
   width: 113px;
   height: 40px;
   padding: 0px 15px;
@@ -1079,15 +1077,14 @@
   border: none;
   cursor: pointer;
   background-color: #f3f3f4;
- 
 }
-.cart-button button:hover{
-  color:white ;
+.cart-button button:hover {
+  color: white;
   background: linear-gradient(to left, #da3c22 50%, white 50%) right;
   background-size: 200%;
-  transition: .5s ease-out;
+  transition: 0.5s ease-out;
 }
-.txtbutton{
+.txtbutton {
   background-color: rgb(218, 60, 34);
   color: rgb(255, 255, 255);
   font-size: 17px;
@@ -1099,24 +1096,24 @@
   font-family: "Rubik", sans-serif;
   border: none;
 }
-.product-style1-button{
+.product-style1-button {
   padding-top: 30px;
 }
 .video-area {
   width: 100%;
   height: 550px;
 }
-.layer-outer{
+.layer-outer {
   height: 450px;
-  background-image: url("http://mehedi.asiandevelopers.com/corvex/assets/images/shape/shape-bg-2.png")
+  background-image: url("http://mehedi.asiandevelopers.com/corvex/assets/images/shape/shape-bg-2.png");
 }
-.holder-box{
+.holder-box {
   width: 100%;
   height: 550px;
   position: relative;
   z-index: 1;
 }
-.video-holder-box{
+.video-holder-box {
   width: 100%;
   height: 550px;
   background-image: url("http://mehedi.asiandevelopers.com/corvex/assets/images/resources/video-gallery-bg.jpg");
@@ -1128,7 +1125,7 @@
   position: relative;
   z-index: 1;
 }
-.play-button-shape{
+.play-button-shape {
   width: 130px;
   height: 130px;
   background-color: #da3c22;
@@ -1137,7 +1134,7 @@
   z-index: 9;
   position: absolute;
 }
-.play-button-shape-inside{
+.play-button-shape-inside {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -1147,25 +1144,25 @@
   align-items: center;
   justify-content: center;
 }
-.video-popup i{
-color: white;
+.video-popup i {
+  color: white;
 }
-.play-button-shape-outside{
+.play-button-shape-outside {
   position: absolute;
   height: 150px;
   width: 150px;
   opacity: 0;
-  transform: scale(0,0);
+  transform: scale(0, 0);
   background-color: white;
   border-radius: 50%;
 }
-.video-holder-box:hover .outs{
+.video-holder-box:hover .outs {
   transform: scale(1.2, 1.2);
   opacity: 0.3;
   transition: ease 2s;
 }
 
-.shape10{
+.shape10 {
   position: absolute;
   z-index: -1;
   right: 5%;
@@ -1173,44 +1170,41 @@ color: white;
   opacity: 0.35;
   animation: updownshape10 infinite 2s ease;
 }
-@keyframes updownshape10{
-  
-    0% {
-      position: absolute;
-      bottom: -3%;
-    }
-    50% {
-      position: absolute;
-      bottom: -1%;
-    }
-    100% {
-      position: absolute;
-      bottom: -3%;
-    }
-  
+@keyframes updownshape10 {
+  0% {
+    position: absolute;
+    bottom: -3%;
+  }
+  50% {
+    position: absolute;
+    bottom: -1%;
+  }
+  100% {
+    position: absolute;
+    bottom: -3%;
+  }
 }
-.faq-area{
+.faq-area {
   width: 100%;
   height: 935px;
-  padding: 150px 0px 120px; 
+  padding: 150px 0px 120px;
 }
-.faq-content{
+.faq-content {
   position: relative;
 }
-.accordion-box{
+.accordion-box {
   width: 100%;
   height: 330px;
   position: relative;
 }
-.shape12{
+.shape12 {
   position: absolute;
   opacity: 0.3;
   top: 40%;
   left: -15%;
   animation: updownshape12 2s ease infinite;
 }
-@keyframes updownshape12{
-  
+@keyframes updownshape12 {
   0% {
     position: absolute;
     top: 38%;
@@ -1223,9 +1217,8 @@ color: white;
     position: absolute;
     top: 38%;
   }
-
 }
-.accordion-block{
+.accordion-block {
   height: 90px;
   margin-bottom: 30px;
   padding: 15px 30px;
@@ -1235,19 +1228,19 @@ color: white;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   cursor: pointer;
 }
-.accordion-block h4{
+.accordion-block h4 {
   line-height: 28px;
   font-weight: 700;
   font-size: 20px;
   font-family: "League Spartan", sans-serif;
-margin: 0;
-color: #0c1529;
+  margin: 0;
+  color: #0c1529;
 }
-.accordion-block i{
+.accordion-block i {
   width: 30px;
   height: 13px;
 }
-.shape11{
+.shape11 {
   position: absolute;
   bottom: -10%;
   left: -50%;
@@ -1271,30 +1264,30 @@ color: #0c1529;
     transform: rotate(0);
   }
 }
-.faq-image-box{
+.faq-image-box {
   position: relative;
   max-width: 500px;
-height: 635px;
+  height: 635px;
   width: 100%;
   float: right;
   padding-left: 80px;
   padding-bottom: 215px;
 }
-.faqinner{
+.faqinner {
   position: absolute;
 }
-.shape13{
+.shape13 {
   position: absolute;
   top: 15%;
   left: -12%;
   opacity: 0.3;
 }
-.shape14{
-position: absolute;
-bottom: 22%;
-right: 25%;
-opacity: 0.2;
-animation: zoomInOut infinite ease 3s;
+.shape14 {
+  position: absolute;
+  bottom: 22%;
+  right: 25%;
+  opacity: 0.2;
+  animation: zoomInOut infinite ease 3s;
 }
 @keyframes zoomInOut {
   0% {
@@ -1315,31 +1308,33 @@ animation: zoomInOut infinite ease 3s;
     opacity: 0;
   }
 }
-.shape15{
+.shape15 {
   position: absolute;
   bottom: -25%;
   right: -70%;
   opacity: 0.3;
 }
-.faqoverlayimage{ position: absolute;
+.faqoverlayimage {
+  position: absolute;
   left: 0;
-  bottom: 0;}
+  bottom: 0;
+}
 
-  .faqoverlayimage {
+.faqoverlayimage {
   overflow: hidden;
 }
-  
-.faq-image-box:hover .faqoverlayimage img{
-    transform: scale(1.1) rotate(5deg);
-    transition: ease 1s;
+
+.faq-image-box:hover .faqoverlayimage img {
+  transform: scale(1.1) rotate(5deg);
+  transition: ease 1s;
 }
-.faqinner{
+.faqinner {
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
 }
-.faqinnerover{
+.faqinnerover {
   position: absolute;
   z-index: -1;
   width: 100%;
@@ -1349,69 +1344,101 @@ animation: zoomInOut infinite ease 3s;
   border-radius: 50%;
   transform: scale(0);
 }
-.faq-image-box:hover .faqinnerover{
+.faq-image-box:hover .faqinnerover {
   position: absolute;
   z-index: 5;
   animation: pulse ease 0.5s;
-  
 }
 
 @keyframes pulse {
-	0% {
-		transform: scale(0.1);
-	}
+  0% {
+    transform: scale(0.1);
+  }
 
-	100% {
-		transform: scale(2);
-	}
+  100% {
+    transform: scale(2);
+  }
 }
-@media (max-width:1200px){
-  .faqimgrow{
+@media (max-width: 1200px) {
+  .faqimgrow {
     display: flex;
     justify-content: start;
   }
-  .faq-area{
+  .faq-area {
     height: 1500px;
   }
-
+  .tdis{
+    flex-direction: column;
+  }
+  .testimonial-image-box {
+    width: 100%;
+  }
+  .testimonial-text{
+    width: 100%;
+  }
+  .testimonial-area{height: 1400px;
+  margin-bottom: 300px;}
 }
-@media (max-width:1100px){
-
+@media (max-width: 1100px) {
+  .testimonial-image-box {
+    width: 100%;
+  }
+  .testimonial-text{
+    width: 100%;
+  }
+  .testimonial-area{height: 1400px;
+  margin-bottom: 300px;}
 }
-@media (max-width:768px){
-  .shape15{
+@media (max-width: 768px) {
+  .shape15 {
     position: absolute;
     bottom: -25%;
     right: -30%;
     opacity: 0.3;
   }
+  .testimonial-image-box ul{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .testimonial-area{height: 2000px;}
 }
-.testimonial-area{
+
+.testimonial-area {
   width: 100%;
   height: 608px;
 }
-.testimonial-image-box{
+.testimonial-image-box {
   width: 50%;
+  height: 490px;
 }
-.testimonial-image-box ul{
+.testimonial-image-box ul {
   list-style: none;
   display: flex;
   margin: 0;
 }
-.tdis{
+.tdis {
   display: flex;
+  width: 100%;
+  flex-wrap: wrap;
 }
-
-.tesli{
+.tesli img {
+  width: 360px;
+  height: 480px;
+}
+.tesli2 img {
+  width: 360px;
+  height: 480px;
+}
+.tesli {
   padding-right: 20px;
 }
-.tesli2{
+.tesli2 {
   padding: 0px 20px;
 }
-.testimonial-text{
+.testimonial-text {
   width: 50%;
-  position: relative;
-  z-index: -1;
+  height: 490px;
+
 }
 .subtitlets {
   width: 100%;
@@ -1444,7 +1471,7 @@ animation: zoomInOut infinite ease 3s;
   color: rgb(12, 21, 41);
   margin-bottom: 30px;
 }
-.inner-content{
+.inner-content {
   width: 600px;
   padding-left: 60px;
   padding-top: 90px;
@@ -1456,26 +1483,25 @@ animation: zoomInOut infinite ease 3s;
   font-weight: 500;
   font-family: "Rubik", sans-serif;
 }
-.tes-client-info{
+.tes-client-info {
   display: flex;
   align-items: center;
 }
-.tes-client-info img{
+.tes-client-info img {
   width: 55px;
   height: 55px;
 }
-.title-box{
+.title-box {
   padding-left: 15px;
 }
-.shape16{
+.shape16 {
   position: absolute;
   bottom: 20%;
   left: -10%;
   opacity: 0.3;
-  animation: infinite 5s updownshape16 ;
+  animation: infinite 5s updownshape16;
 }
-@keyframes updownshape16{
-  
+@keyframes updownshape16 {
   0% {
     position: absolute;
     bottom: 20%;
@@ -1488,10 +1514,260 @@ animation: zoomInOut infinite ease 3s;
     position: absolute;
     bottom: 20%;
   }
-
 }
-.team-area{
+.team-area {
   height: 967px;
   padding-top: 150px;
   padding-bottom: 100px;
+  margin-top: 10px
+}
+.title-holder{
+  width: 100%;
+  text-align: center;
+}
+.img-holder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.teaminner{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.teaminner img{
+  width: 100%;
+}
+
+.social-icon{
+  position: absolute;
+}
+.single-team-item:hover .social-icon li{
+  opacity: 1;
+  z-index: 10;
+  transition: 1s;
+}
+.social-icon li{
+ opacity: 0;
+}
+.social-icon ul{
+  display: flex;
+  list-style: none;
+}
+.single-team-item{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.blackoverlay {
+  width: 100%;
+  height: 0;
+  background-color: black;
+  opacity: 0;
+  bottom: 0;
+  left: 0;
+  transition: 1s;
+  z-index: 1;
+  position: absolute;
+}
+
+.single-team-item:hover .teaminner img{
+  transform: scale(1.2);
+}
+.single-team-item:hover .blackoverlay{
+  opacity: 0.6;
+  height: 100%;
+  }
+.social-icon li{
+  margin-right: 10px;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+}
+@media (max-width: 1200px) {
+  .slogan-content-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 1000px) {
+  .single-team-item{
+    margin-top: 50px;
+  }
+  .team-area{
+    height: 2600px;
+  }
+}
+@media (max-width: 768px) {
+
+}
+.slogan-area{
+  width: 100%;
+  height: 400px;
+  background-image: url("http://mehedi.asiandevelopers.com/corvex/assets/images/parallax-background/slogan-area-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: cover;
+  position: relative;
+  z-index: 0;
+  
+}
+.slogan-overlay{
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #da3b22c3;
+  display: flex;
+  align-items: center;
+}
+.slogan-content-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.title-box h2{
+  color: white;
+  font-family: "League Spartan", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+}
+.button-box{
+  display: flex;
+  align-items: center;
+}
+.btn-one{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: white;
+  height: 60px;
+  width: 300px;
+  padding: 0px 30px;
+}
+.btn-one i{
+  color: #da3c22;
+}
+.btn-one span{
+  color: #0c1529;
+  font-size: 17px;
+  font-weight: 800;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+}
+.counter-area{
+  height: 211px;
+  width: 100%;
+  background-color: #0c1529;
+}
+.fact-counter-box{
+  display: flex;
+  list-style: none;
+}
+.fact-counter{
+  width: 100%;
+  height: 211px;
+  display: flex;
+  align-items: center;
+ 
+}
+.fact-counter-box li{
+  width: 25%;
+  text-align: center;
+}
+.fact-counter-box{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.fact-counter-box li h2{
+  color: #da3c22;
+  font-family: "League Spartan", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+}
+.fact-counter-box li i{
+  color: #da3c22;
+  font-family: "League Spartan", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+}
+.fact-counter-box h5{
+  color: white;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+}
+.blog-area{
+  width: 100%;
+  height: 1075px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.single-blog-item{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.redoverlay {
+  width: 100%;
+  height: 0;
+  background-color: #da3c22;
+  opacity: 0;
+  bottom: 0;
+  left: 0;
+  transition: 1s;
+  z-index: 1;
+  position: absolute;
+}
+
+.single-blog-item:hover .teaminner img{
+  transform: scale(1.2);
+}
+.single-blog-item:hover .redoverlay{
+  opacity: 0.6;
+  height: 100%;
+  }
+
+.title-holder2{
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.blogbutton{
+  background-color: rgb(12, 21, 41);
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  padding: 0px 40px;
+  width: 181px;
+  height: 60px;
+  line-height: 60px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  border: none;
+}
+.title-holder2 p{
+  color: rgb(128, 128, 128);
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+}
+.title-holder2 h3:hover {
+  transition: 0.3s ease;
+  cursor: pointer;
+  color: #da3c22;
+}
+.title-holder2 h3{
+  color: rgb(12, 21, 41);
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  font-family: "League Spartan", sans-serif;
 }
