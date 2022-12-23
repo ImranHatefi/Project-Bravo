@@ -436,7 +436,11 @@
   animation: fadeIndown 1s ease backwards;
   display: block;
 }
-
+@media (max-width: 768px) {
+  .header-right {
+    display: none;
+  }
+}
 @keyframes fadeIndown {
   0% {
     transform: translate(0px, -50px);
