@@ -478,13 +478,13 @@
     position: relative;
     display: block;
     overflow: hidden;
-    background-image: url(../img/breadcrumb-1.jpg);
+    background-image: url("http://mehedi.asiandevelopers.com/corvex/assets/images/breadcrumb/breadcrumb-1.jpg");
     background-attachment: scroll;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 150px 0 146px;
-    z-index: 10;
+    z-index: 9;
 }
 .br-area::before{
     position: absolute;
@@ -1141,9 +1141,9 @@ body{
 }
 @media screen and (max-width: 500px) {
     .middle{
-        width: 455px;
-        height: 455px;
-        top:33.5%;
+        width: 360px;
+        height: 360px;
+        top:30.5%;
         left: 50%;
     }
 }
