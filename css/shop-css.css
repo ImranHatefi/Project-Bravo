@@ -1098,6 +1098,9 @@ body{
     }
   }
 @media screen and (max-width: 990px) {
+    .row-rev{
+        flex-direction: column-reverse;
+    }
     .middle{
         width: 329.3px;
         height: 329.3px;
@@ -1125,4 +1128,13 @@ body{
         left: 50%;
     }
 }
+@media screen and (max-width: 500px) {
+    .middle{
+        width: 455px;
+        height: 455px;
+        top:33.5%;
+        left: 50%;
+    }
+}
+
 
