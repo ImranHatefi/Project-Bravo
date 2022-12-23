@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.footer-bg {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-attachment: scroll;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-image: url("http://mehedi.asiandevelopers.com/corvex/assets/images/shape/footer-bg-shape.png");
+  }
+  
+  .footer-area {
+    position: relative;
+    padding: 0px 0px 0px;
+    z-index: 1;
+  }
+  
+  .footer {
+    position: relative;
+    padding: 245px 0 100px;
+    z-index: 1;
+    height: 710px;
+  }
+  @media (max-width: 1000px) {
+    .footer {
+      height: 1062px;
+    }
+  }
+  @media (max-width: 768px) {
+    .footer {
+      height: 1377px;
+    }
+  }
+  .footershape1 {
+    position: absolute;
+    top: 175px;
+    left: 100px;
+    opacity: 0.15;
+    animation: grow2 infinite 5s ease;
+  }
+  .footershape2 {
+    position: absolute;
+    left: 0;
+    bottom: -35px;
+    opacity: 0.15;
+    right: 0;
+    text-align: center;
+    animation: updownfooter infinite 3s ease;
+  }
+  .footershape3 {
+    position: absolute;
+    top: 170px;
+    right: 55px;
+    opacity: 0.15;
+    animation: wave2 infinite 10s ease;
+  }
+  
+  @keyframes wave2 {
+    0% {
+      transform: rotate(0);
+    }
+    25% {
+      transform: rotate(-15deg);
+    }
+    50% {
+      transform: rotate(15deg);
+    }
+    75% {
+      transform: rotate(-15deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
+  }
+  @keyframes grow2 {
+    0% {
+      transform: scale(0, 0);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  @keyframes updownfooter {
+    0% {
+      position: absolute;
+      bottom: -35px;
+    }
+    50% {
+      position: absolute;
+      bottom: -30px;
+    }
+    100% {
+      position: absolute;
+      bottom: -35px;
+    }
+  }
+  .single-footer-widget {
+    position: relative;
+    overflow: hidden;
+  }
+  .our-company-info .text-box {
+    position: relative;
+    padding-top: 26px;
+    margin-bottom: 22px;
+  }
+  .text-box p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+  }
+  .footer-contact-info ul li {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+  }
+  .footer-contact-info ul li .icon {
+    position: absolute;
+    top: 3px;
+    left: 0;
+  }
+  .footer-contact-info li i {
+    position: relative;
+    top: 5px;
+    font-size: 22px;
+    color: #da3c22;
+  }
+  .footer-contact-info .text p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    margin: 0;
+  }
+  a,
+  a:hover,
+  a:active,
+  a:focus {
+    text-decoration: none;
+    outline: none;
+    border: none;
+  }
+  
+  .footer-contact-info .text a {
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .single-footer-widget .title {
+    margin-top: 0px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    height: 80px;
+  }
+  .single-footer-widget .title h2 {
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 28.6px;
+    font-weight: 700;
+    font-family: "League Spartan", sans-serif;
+    text-transform: capitalize;
+  }
+  .footer-widget-links1 li {
+    position: relative;
+    display: block;
+    margin-bottom: 14px;
+  }
+  .footer-widget-links1 li a {
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 500ms ease;
+    line-height: 22px;
+  }
+  .top-selling-product {
+    position: relative;
+    display: block;
+    margin-top: 7px;
+  }
+  .top-selling-product li .img-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+  }
+  .img-box img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+  }
+  
+  .top-selling-product li {
+    position: relative;
+    display: block;
+    padding-left: 80px;
+    min-height: 80px;
+    margin-bottom: 20px;
+  }
+  .top-selling-product li .title-box {
+    position: relative;
+    display: block;
+    padding-left: 18px;
+  }
+  .top-selling-product li .title-box h5 {
+    position: relative;
+    top: -4px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+  }
+  .top-selling-product li .title-box h5 a {
+    color: #ffffff;
+  }
+  .top-selling-product li .title-box .review-box {
+    position: relative;
+    display: block;
+    margin-top: 3px;
+    margin-bottom: 7px;
+  }
+  .top-selling-product li .title-box .review-box a {
+    color: #fbb419;
+    font-size: 14px;
+  }
+  .top-selling-product li .title-box .rate-box p {
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 400;
+    margin: 0;
+  }
+  .top-selling-product li .title-box .rate-box p del {
+    color: #ffffff;
+    opacity: 0.7;
+  }
+  .footer-subscribe-box {
+    position: relative;
+    display: block;
+    background: #0c1529;
+    padding-bottom: 100px;
+    height: 225px;
+  }
+  .subscribe-content-box {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px 30px 30px;
+  }
+  
+  .subscribe-content-box .subscribe-title h3 {
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 800;
+    padding: 12px 0 13px;
+  }
+  .subscribe-form {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+  .subscribe-box {
+    position: relative;
+    display: block;
+    max-width: 560px;
+    width: 100%;
+  }
+  .subscribe-form input[type="email"] {
+    position: relative;
+    display: block;
+    max-width: 320px;
+    width: 100%;
+    height: 55px;
+    background: transparent;
+    border: 0px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Rubik", sans-serif;
+  }
+  
+  .subscribe-form button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #da3c22;
+    line-height: 55px;
+    padding-left: 45px;
+    padding-right: 45px;
+    display: inline-block;
+    color: #ffffff;
+    border: none;
+    font-size: 17px;
+    line-height: 60px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border-radius: 0px;
+  }
+  .footer-bottom {
+    position: relative;
+    display: block;
+    background: #091020;
+    padding: 25px 0;
+    height: 90px;
+  }
+  .footer-bottom .outer-box-footer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .copyright-text p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+  }
+  .copyright-text a {
+    color: #da3c22;
+  }
+  .copyright-text a:hover {
+    color: white;
+    transition: 0.3s;
+  }
+  
+  .footer-social-link ul li {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .footer-social-link ul li a {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 1;
+  }
+  .footer-menu-style1 ul li {
+    position: relative;
+    display: inline-block;
+    padding-right: 16px;
+    margin-right: 15px;
+  }
+  .footer-menu-style1 ul li a {
+    color: #ffffff;
+    font-size: 16px;
+  }
+  .footer-menu-style1 ul a:hover {
+    color: #da3c22;
+    transition: 0.3s;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-bottom {
+      height: 1377px;
+    }
+  }
+  @media (max-width: 991px) {
+    .outer-box-footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer-bottom {
+      height: 172px;
+    }
+  }
+  
