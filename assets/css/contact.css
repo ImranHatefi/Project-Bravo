@@ -1,0 +1,94 @@
+#intro {
+  background-image: url(/img/breadcrumb-1.jpg);
+  height: 400px;
+  /* opacity: 0.60; */
+}
+.heading {
+  color: white;
+  font-weight: 700;
+  font-size: 40px;
+}
+.home {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+}
+.contact {
+  color: red;
+  font-size: 20px;
+  font-weight: 400;
+}
+.direction {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+.home:hover {
+  color: red;
+  transition: 0.7s;
+}
+#info {
+  background-image: url(http://mehedi.asiandevelopers.com/corvex/assets/images/pattern/thm-pattern-3.png);
+  height: 500px;
+  /* opacity: 0.07; */
+}
+
+.location {
+  background-color: white;
+  border-radius: 20px;
+  padding: 50px 10px 30px 42px;
+  margin-top: 150px;
+}
+
+.icon-location {
+  color: red;
+  font-size: 25px;
+  position: absolute;
+  top: 22px;
+  left: 27px;
+}
+
+.icon-location:hover {
+  color: white;
+}
+
+.icon-loc:hover {
+  background-color: red;
+}
+
+.icon-loc {
+  border-radius: 50%;
+  border: 1px solid red;
+  width: 70px;
+  height: 70px;
+  background-color: rgba(251, 228, 224, 0.6);
+  text-align: center;
+  position: relative;
+}
+
+.address {
+  color: gray;
+}
+.phone {
+  background-color: white;
+  border-radius: 20px;
+  padding: 50px 10px 30px 42px;
+  /* margin-top: 150px; */
+}
+.icon-phone {
+  border-radius: 50%;
+  border: 1px solid red;
+  width: 70px;
+  height: 70px;
+  background-color: rgba(251, 228, 224, 0.6);
+  text-align: center;
+  position: relative;
+}
+.phone-2 {
+  color: red;
+  font-size: 25px;
+  position: absolute;
+  top: 22px;
+  left: 27px;
+}

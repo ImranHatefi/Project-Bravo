@@ -1,0 +1,2333 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header-top {
+  width: 100%;
+  height: 50px;
+  color: #808080;
+  background-color: #0c1529;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.outer-box {
+  width: 100%;
+  text-align: center;
+}
+.social-link ul {
+  list-style: none;
+  display: flex;
+  margin-bottom: 0px;
+}
+.social-link i:hover {
+  color: rgb(218, 60, 34);
+  transition: 0.7s;
+}
+.social-link {
+  padding-left: 20px;
+  display: flex;
+}
+.title h3 {
+  width: 100px;
+  font-size: 15px;
+  margin-bottom: 0px;
+  color: #ffffff;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+}
+.header-top-left {
+  height: 28px;
+  display: flex;
+  width: 240px;
+  position: relative;
+}
+.header-socials {
+  height: 28px;
+  display: flex;
+}
+.title {
+  height: 28px;
+  display: flex;
+  align-items: center;
+}
+.social-link a {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+.social-link ul li {
+  margin-right: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.header-top-right {
+  position: relative;
+  width: 609px;
+  height: 28px;
+}
+.header-contact {
+  height: 28px;
+  display: flex;
+}
+.header-contact ul {
+  display: flex;
+  list-style: none;
+  height: 28px;
+  margin-bottom: 0px;
+  font-size: 15px;
+}
+.header-contact li {
+  display: flex;
+}
+.header-contact li:first-child {
+  padding-right: 30px;
+  height: 28px;
+}
+.header-contact li:nth-child(2) {
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.168);
+  height: 28px;
+  margin-right: 30px;
+}
+.header-contact li:nth-child(3) {
+  padding-right: 21px;
+  height: 28px;
+}
+.header-contact li:nth-child(4) {
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.168);
+  height: 28px;
+  margin-right: 30px;
+}
+
+.header-contact i {
+  color: rgb(218, 60, 34);
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+}
+.header-contact a {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.header-contact a:hover {
+  color: rgb(218, 60, 34);
+  transition: 0.7s;
+}
+.header-contact span {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1000px) {
+  .header-top {
+    display: none;
+  }
+}
+.navbar {
+  width: 100%;
+  height: 110px;
+  display: flex;
+}
+.header-left {
+  width: 290px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  width: 580px;
+  position: relative;
+}
+.navigation ul {
+  list-style: none;
+  display: flex;
+  margin: 0px;
+}
+.navli {
+  height: 100px;
+  padding: 33px 0px;
+}
+.dropdownmenu {
+  width: 33%;
+  position: absolute;
+  cursor: pointer;
+  top: 87px;
+  left: -10px;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  z-index: 10;
+  padding: 20px 10px;
+  background-color: white;
+  visibility: hidden;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.dropdownmenu2 {
+  width: 36%;
+  position: absolute;
+  cursor: pointer;
+  top: 87px;
+  left: 190px;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  z-index: 10;
+  padding: 20px 10px;
+  background-color: white;
+  visibility: hidden;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.dropdownmenu3 {
+  width: 45%;
+  position: absolute;
+  cursor: pointer;
+  top: 87px;
+  left: 280px;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  z-index: 10;
+  padding: 20px 10px;
+  background-color: white;
+  visibility: hidden;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.testimoniallink{
+  color: #000000;
+}
+.dropdownmenu4 {
+  width: 45%;
+  position: absolute;
+  cursor: pointer;
+  top: 87px;
+  left: 365px;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  z-index: 10;
+  padding: 20px 10px;
+  background-color: white;
+  visibility: hidden;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.dropdownmenu li:hover {
+  color: #da3c22;
+  margin-left: 10px;
+  transition: 0.5s;
+}
+.home:hover .dropdownmenu {
+  visibility: visible;
+  animation: fadeInupdropd 0.7s;
+}
+.dropdownmenu2 li:hover {
+  color: #da3c22;
+  margin-left: 10px;
+  transition: 0.5s;
+}
+.shop:hover .dropdownmenu2 {
+  visibility: visible;
+  animation: fadeInupdropd 0.7s;
+}
+.dropdownmenu3 li:hover {
+  color: #da3c22;
+  margin-left: 10px;
+  transition: 0.5s;
+}
+.pages:hover .dropdownmenu3 {
+  visibility: visible;
+  animation: fadeInupdropd 0.7s;
+}
+
+.dropdownmenu4 li:hover {
+  color: #da3c22;
+  margin-left: 10px;
+  transition: 0.5s;
+}
+.news:hover .dropdownmenu4 {
+  visibility: visible;
+  animation: fadeInupdropd 0.7s;
+}
+
+@keyframes fadeInupdropd {
+  0% {
+    transform: translate(0px, 60px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px, 0);
+    opacity: 1;
+  }
+}
+
+.outer {
+  display: flex;
+}
+.header-middle {
+  display: flex;
+  align-items: center;
+}
+.navigation li {
+  margin-right: 25px;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+}
+.menu {
+  background-color: #da3c22;
+  color: white;
+  width: 40px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+@media (max-width: 1200px) {
+  .menu {
+    visibility: visible;
+  }
+  .navigation {
+    display: none;
+  }
+  .outer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.navcolor {
+  background-color: transparent;
+  color: rgb(12, 21, 41);
+  text-decoration: none;
+}
+
+.home {
+  color: rgb(218, 60, 34);
+}
+.navcolor:hover {
+  color: rgb(218, 60, 34);
+  text-decoration: none;
+}
+.home:hover {
+  text-decoration: none;
+  color: black;
+}
+.header-right {
+  width: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+.header-right ul {
+  list-style: none;
+}
+.search {
+  width: 290px;
+  height: 85px;
+  display: flex;
+  position: absolute;
+  top: 101.5px;
+  right: 80px;
+  background-color: black;
+  padding: 20px;
+  margin-bottom: 0px;
+  z-index: 12;
+  visibility: hidden;
+}
+.search-toggle {
+  cursor: pointer;
+}
+
+.search li {
+  height: 43px;
+}
+.search-box {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-box a {
+  color: rgb(12, 21, 41);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+#hr-search {
+  width: 205px;
+  height: 43px;
+  padding: 0px 50px 0px 15px;
+  border: 1px solid black;
+  font-size: 13px;
+  border-style: none;
+}
+#hr-s-btn {
+  height: 45px;
+  width: 45px;
+  background-color: rgba(0, 0, 0, 0.95);
+  border: none;
+  color: white;
+}
+#hr-s-btn:hover {
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+}
+.user-btn i {
+  color: rgb(12, 21, 41);
+}
+.header-cart-btn i {
+  color: rgb(12, 21, 41);
+}
+.header-cart-btn span {
+  color: rgb(12, 21, 41);
+}
+.user-btn {
+  margin-right: 20px;
+}
+.search-box {
+  margin-right: 20px;
+}
+.header-cart-btn {
+  position: relative;
+}
+.header-cart-btn span {
+  position: absolute;
+  bottom: 90%;
+  left: 90%;
+  border-radius: 50%;
+  background-color: #da3c22;
+  width: 20px;
+  color: white;
+  height: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-box:hover .search {
+  visibility: visible;
+  transition: 1s;
+  animation: fadeIndown 1s ease backwards;
+  display: block;
+}
+
+@keyframes fadeIndown {
+  0% {
+    transform: translate(0px, -50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px, 0);
+    opacity: 1;
+  }
+}
+@keyframes fadeIndown2 {
+  0% {
+    transform: translate(0px, -100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px, 0);
+    opacity: 1;
+  }
+}
+@keyframes fadeInup {
+  0% {
+    transform: translate(0px, 100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px, 0);
+    opacity: 1;
+  }
+}
+.img-layer {
+  width: 100%;
+  height: 775px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 100px;
+  position: relative;
+}
+.content {
+  width: 100%;
+}
+
+.big-title h2 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 96px;
+  font-weight: 800;
+  line-height: 96px;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 25px;
+  animation: fadeIndown2 1s ease backwards;
+}
+.content h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #ffffff;
+  animation: fadeInup 2s ease;
+}
+.content-btn {
+  padding-top: 45px;
+}
+.content-btn button {
+  background-color: rgb(218, 60, 34);
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  padding: 0px 40px;
+  width: 181px;
+  height: 60px;
+  line-height: 60px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  border: none;
+  animation: fadeInup 3s ease;
+}
+.content-btn:hover button{
+background-color: white;
+color: #0c1529;
+transition: 0.5s;
+}
+.main-slide-right-text {
+  max-width: 670px;
+  width: 100%;
+  height: 400px;
+  background-color: white;
+  padding: 50px;
+  position: absolute;
+  bottom: -20%;
+  right: 12%;
+  display: flex;
+  animation: fadeInRight 1s ease;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+@media (max-width: 1300px) {
+  .main-slide-right-text {
+    position: absolute;
+    right: 10%;
+    bottom: -20%;
+  }
+}
+@media (max-width: 1200px) {
+  .main-slide-right-text {
+    position: absolute;
+    right: 5%;
+    bottom: -20%;
+  }
+}
+@media (max-width: 1100px) {
+  .main-slide-right-text {
+    position: absolute;
+    right: 0%;
+  }
+
+  .big-title h2 {
+    font-size: 64px;
+    margin-bottom: 10px;
+  }
+  .content h3 {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .content-btn {
+    padding-top: 25px;
+  }
+
+  .content-btn button {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .main-slide-right-text img {
+    display: none;
+  }
+  .main-slide-right-text {
+    height: 250px;
+    padding: 45px;
+    position: absolute;
+    bottom: -10%;
+  }
+  .header-right {
+    display: none;
+  }
+}
+
+.mstext-box {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  flex-direction: column;
+}
+.mstext-box h3 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 22px;
+  color: rgb(12, 21, 41);
+}
+.mstext-box p {
+  color: rgb(128, 128, 128);
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: left;
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(500px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.featuresection1 {
+  width: 100%;
+  height: 925px;
+  padding-top: 175px;
+  padding-bottom: 100px;
+}
+@media (max-width: 1000px) {
+  .featuresection1 {
+    height: 1750px;
+  }
+}
+.textsection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sub-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 54px;
+  padding-bottom: 26px;
+}
+.sub-title h4 {
+  color: #da3c22;
+  font-size: 18px;
+  letter-spacing: 4.8px;
+  line-height: 28px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  margin: 0px;
+}
+.sleft {
+  background-color: #da3c22;
+  width: 20px;
+  height: 2px;
+  margin-right: 20px;
+}
+.sright {
+  background-color: #da3c22;
+  width: 20px;
+  height: 2px;
+  margin-left: 20px;
+}
+.textsection h2 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 53px;
+  font-weight: 800;
+  line-height: 52px;
+  color: rgb(12, 21, 41);
+  text-align: center;
+}
+.textsection p {
+  color: rgb(128, 128, 128);
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+}
+.textcontainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.turndiv {
+  height: 356px;
+  padding: 0px 30px;
+  margin-bottom: 42px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+.iconholder {
+  padding: 3px;
+  width: 180px;
+  margin-bottom: 35px;
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 182px;
+  position: relative;
+}
+.dotted-box {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border: 2px solid #da3c22;
+  border-radius: 50%;
+  position: relative;
+  z-index: 10;
+  background-color: transparent;
+}
+
+.inner {
+  width: 180px;
+  height: 182px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 2px;
+  overflow: hidden;
+}
+.inner span i {
+  width: 74px;
+  height: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner i {
+  color: #da3c22;
+}
+
+.dbcircle-1 {
+  width: 32px;
+  height: 32px;
+  background-color: #da3c22;
+  border-radius: 50%;
+  border: 3px white solid;
+  position: absolute;
+  left: 70px;
+  top: -18px;
+}
+.dbcircle-2 {
+  width: 32px;
+  height: 32px;
+  background-color: #da3c22;
+  border-radius: 50%;
+  border: 3px white solid;
+  position: absolute;
+  left: 70px;
+  bottom: -18px;
+}
+
+@keyframes circlearound {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.dotted-box:hover {
+  animation: circlearound 3s infinite ease;
+  animation-play-state: running;
+  transition: linear;
+  box-shadow: black;
+}
+
+.innerover {
+  position: absolute;
+  top: 2px;
+  width: 180px;
+  height: 180px;
+  background-color: #da3c22;
+  z-index: -5;
+  border-radius: 50%;
+  visibility: hidden;
+}
+@keyframes grow {
+  0% {
+    transform: scale(0, 0);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.iconholder:hover .innerover {
+  animation: grow 1s ease;
+  visibility: visible;
+}
+.iconholder:hover .inner i {
+  color: white;
+}
+
+.textholder {
+  text-align: center;
+}
+.textholder h3 {
+  font-size: 32px;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  line-height: 34px;
+  margin-bottom: 22px;
+  color: rgb(12, 21, 41);
+}
+.textholder p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28px;
+  color: rgb(128, 128, 128);
+  font-family: "Rubik", sans-serif;
+}
+.meat {
+  width: 74px;
+  height: 74px;
+}
+.col-xl-6 {
+  width: 100%;
+}
+.aboutstyle {
+  width: 100%;
+  display: flex;
+}
+.aboutstyle-img {
+  display: block;
+  height: 595px;
+  width: 100%;
+  padding-left: 35px;
+  position: relative;
+}
+.mainimg {
+  position: relative;
+  width: 420px;
+}
+.mainimg img {
+  width: 100%;
+}
+
+.shape1 {
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  opacity: 0.3;
+  animation: wave infinite 7s;
+}
+.shape2 {
+  position: absolute;
+  top: 20%;
+  right: 7%;
+  opacity: 0.3;
+  animation: updown infinite 3s;
+}
+.shape3 {
+  position: absolute;
+  top: 40%;
+  right: -3%;
+  opacity: 0.3;
+}
+.shape4 {
+  position: absolute;
+  bottom: 20%;
+  left: -1%;
+  opacity: 0.3;
+  animation: updown2 infinite 3s;
+}
+.shape5 {
+  position: absolute;
+  bottom: 7%;
+  left: -3%;
+  opacity: 0.3;
+  animation: lefttoright 3s;
+}
+.about-image-2 {
+  border: 12px white solid;
+  width: 320px;
+  position: absolute;
+  bottom: -50px;
+  right: 10px;
+  animation: grow 3s;
+}
+.about-image-2 img {
+  width: 100%;
+}
+
+@keyframes lefttoright {
+  0% {
+    position: absolute;
+    left: -20%;
+  }
+  100% {
+    position: absolute;
+    left: -3%;
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes updown {
+  0% {
+    position: absolute;
+    top: 20%;
+  }
+  50% {
+    position: absolute;
+    top: 18%;
+  }
+  100% {
+    position: absolute;
+    top: 20%;
+  }
+}
+@keyframes updown2 {
+  0% {
+    position: absolute;
+    bottom: 20%;
+  }
+  50% {
+    position: absolute;
+    bottom: 18%;
+  }
+  100% {
+    position: absolute;
+    bottom: 20%;
+  }
+}
+.subtitle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 54px;
+  padding-bottom: 26px;
+}
+
+.subtitle h4 {
+  color: #da3c22;
+  font-size: 18px;
+  letter-spacing: 4.8px;
+  line-height: 28px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  margin: 0px;
+}
+.subtitle span {
+  background-color: #da3c22;
+  width: 25px;
+  height: 2px;
+  margin-left: 15px;
+}
+.styletext h2 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 53px;
+  font-weight: 800;
+  line-height: 52px;
+  color: rgb(12, 21, 41);
+  margin-bottom: 30px;
+}
+.styletext p {
+  color: rgb(128, 128, 128);
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 28px;
+}
+.styletext button {
+  background-color: rgb(218, 60, 34);
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  padding: 0px 40px;
+  width: 181px;
+  height: 60px;
+  line-height: 60px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  border: none;
+}
+.stylecol {
+  height: 750px;
+}
+.outerlayer {
+  width: 100%;
+  background-image: url(http://mehedi.asiandevelopers.com/corvex/assets/images/shape/shape-bg-1.png);
+  height: 1110px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+.productstyle-area {
+  width: 100%;
+  padding: 150px 0px;
+}
+.sec-title {
+  width: 100%;
+}
+.sec-title h2 {
+  color: rgb(12, 21, 41);
+  font-family: "League Spartan", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 52px;
+  margin-bottom: 18px;
+  text-align: center;
+}
+.sec-title p {
+  color: rgb(128, 128, 128);
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 28px;
+}
+.product-content {
+  position: relative;
+}
+.shape6 {
+  position: absolute;
+  bottom: 0%;
+  left: -12%;
+  opacity: 0.3;
+  animation: zoomInOut infinite 3s;
+}
+.shape7 {
+  position: absolute;
+  top: -20%;
+  left: -7%;
+  opacity: 0.3;
+  animation: updown3 infinite 1.5s ease;
+}
+.shape8 {
+  position: absolute;
+  top: -25%;
+  right: -25%;
+  opacity: 0.3;
+  animation: righttoleft 3s;
+}
+
+@keyframes updown3 {
+  0% {
+    position: absolute;
+    top: -20%;
+  }
+  50% {
+    position: absolute;
+    top: -18%;
+  }
+  100% {
+    position: absolute;
+    top: -20%;
+  }
+}
+
+@keyframes righttoleft {
+  0% {
+    position: absolute;
+    right: -50%;
+  }
+  100% {
+    position: absolute;
+    right: -25%;
+  }
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: rotate(0deg) scale(0.7);
+    transform: rotate(0deg) scale(0.7);
+    opacity: 0;
+  }
+
+  50% {
+    transform: rotate(180deg) scale(1);
+    transform: rotate(180deg) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(360deg) scale(0.7);
+    transform: rotate(360deg) scale(0.7);
+    opacity: 0;
+  }
+}
+@media (max-width: 1200px) {
+  .shape7 {
+    position: absolute;
+    top: 200%;
+  }
+  .shape8 {
+    position: absolute;
+    top: -25%;
+    right: -15%;
+  }
+  .outerlayer {
+    height: 1900px;
+  }
+}
+@media (max-width: 1100px) {
+  .productstyle-area {
+    padding-top: 75px;
+  }
+}
+@media (max-width: 1000px) {
+  .singleproduct {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .outerlayer {
+    height: 2800px;
+  }
+  .productstyle-area {
+    padding-top: 0px;
+  }
+  .mainimg {
+    position: relative;
+    width: 300px;
+  }
+  .mainimg img {
+    width: 100%;
+  }
+  .about-image-2 {
+    border: 12px white solid;
+    width: 220px;
+    position: absolute;
+    bottom: 200px;
+    right: 10px;
+    animation: grow 3s;
+  }
+  .about-image-2 img {
+    width: 100%;
+  }
+}
+.outerlayer {
+  overflow: hidden;
+}
+
+.singleproduct {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.image-holder {
+  position: relative;
+}
+.overlayimg {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: #da3c22;
+}
+.overlayimg:hover {
+  transition: 0.7s ease;
+  opacity: 0.9;
+}
+.title-holder h4:hover {
+  transition: 0.3s ease;
+  cursor: pointer;
+  color: #da3c22;
+}
+.image-holder img {
+  width: 100%;
+  height: 100%;
+}
+.title-holder {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  padding: 30px;
+}
+.review-box ul {
+  display: flex;
+  list-style: none;
+  color: #fbb419;
+  margin: 0;
+}
+.product-title {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "League Spartan", sans-serif;
+  color: rgb(34, 34, 34);
+}
+.button-box {
+  display: flex;
+}
+.other-button ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+.other-button {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.other-button li {
+  margin-left: 10px;
+  background-color: #f3f3f4;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart-button:hover {
+  background-color: #da3c22;
+  color: white;
+}
+.cart-button button {
+  width: 113px;
+  height: 40px;
+  padding: 0px 15px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  border: none;
+  cursor: pointer;
+  background-color: #f3f3f4;
+}
+.cart-button button:hover {
+  color: white;
+  background: linear-gradient(to left, #da3c22 50%, white 50%) right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
+}
+.txtbutton {
+  background-color: rgb(218, 60, 34);
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  padding: 0px 40px;
+  width: 181px;
+  height: 60px;
+  line-height: 60px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  border: none;
+}
+.product-style1-button {
+  padding-top: 30px;
+}
+.video-area {
+  width: 100%;
+  height: 550px;
+}
+.layer-outer {
+  height: 450px;
+  background-image: url("http://mehedi.asiandevelopers.com/corvex/assets/images/shape/shape-bg-2.png");
+}
+.holder-box {
+  width: 100%;
+  height: 550px;
+  position: relative;
+  z-index: 1;
+}
+.video-holder-box {
+  width: 100%;
+  height: 550px;
+  background-image: url("http://mehedi.asiandevelopers.com/corvex/assets/images/resources/video-gallery-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.play-button-shape {
+  width: 130px;
+  height: 130px;
+  background-color: #da3c22;
+  border-radius: 50%;
+  opacity: 0.7;
+  z-index: 9;
+  position: absolute;
+}
+.play-button-shape-inside {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #da3c22;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video-popup i {
+  color: white;
+}
+.play-button-shape-outside {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  opacity: 0;
+  transform: scale(0, 0);
+  background-color: white;
+  border-radius: 50%;
+}
+.video-holder-box:hover .outs {
+  transform: scale(1.2, 1.2);
+  opacity: 0.3;
+  transition: ease 2s;
+}
+
+.shape10 {
+  position: absolute;
+  z-index: -1;
+  right: 5%;
+  bottom: -3%;
+  opacity: 0.35;
+  animation: updownshape10 infinite 2s ease;
+}
+@keyframes updownshape10 {
+  0% {
+    position: absolute;
+    bottom: -3%;
+  }
+  50% {
+    position: absolute;
+    bottom: -1%;
+  }
+  100% {
+    position: absolute;
+    bottom: -3%;
+  }
+}
+.faq-area {
+  width: 100%;
+  height: 935px;
+  padding: 150px 0px 120px;
+}
+.faq-content {
+  position: relative;
+}
+.accordion-box {
+  width: 100%;
+  height: 330px;
+  position: relative;
+}
+.shape12 {
+  position: absolute;
+  opacity: 0.3;
+  top: 40%;
+  left: -15%;
+  animation: updownshape12 2s ease infinite;
+}
+@keyframes updownshape12 {
+  0% {
+    position: absolute;
+    top: 38%;
+  }
+  50% {
+    position: absolute;
+    top: 40%;
+  }
+  100% {
+    position: absolute;
+    top: 38%;
+  }
+}
+.accordion-block {
+  height: 90px;
+  margin-bottom: 30px;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+}
+.accordion-block h4 {
+  line-height: 28px;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "League Spartan", sans-serif;
+  margin: 0;
+  color: #0c1529;
+}
+.accordion-block i {
+  width: 30px;
+  height: 13px;
+}
+.shape11 {
+  position: absolute;
+  bottom: -10%;
+  left: -50%;
+  opacity: 0.2;
+  animation: wave2 infinite 10s;
+}
+@keyframes wave2 {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+.faq-image-box {
+  position: relative;
+  max-width: 500px;
+  height: 635px;
+  width: 100%;
+  float: right;
+  padding-left: 80px;
+  padding-bottom: 215px;
+}
+.faqinnerover {
+  position: absolute;
+}
+.shape13 {
+  position: absolute;
+  top: 15%;
+  left: -12%;
+  opacity: 0.3;
+}
+.shape14 {
+  position: absolute;
+  bottom: 22%;
+  right: 25%;
+  opacity: 0.2;
+  animation: zoomInOut infinite ease 3s;
+}
+@keyframes zoomInOut {
+  0% {
+    transform: rotate(0deg) scale(0.7);
+    transform: rotate(0deg) scale(0.7);
+    opacity: 0;
+  }
+
+  50% {
+    transform: rotate(180deg) scale(1);
+    transform: rotate(180deg) scale(1);
+    opacity: 0.3;
+  }
+
+  100% {
+    transform: rotate(360deg) scale(0.7);
+    transform: rotate(360deg) scale(0.7);
+    opacity: 0;
+  }
+}
+.shape15 {
+  position: absolute;
+  bottom: -25%;
+  right: -70%;
+  opacity: 0.3;
+}
+.faqoverlayimage {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.faqoverlayimage {
+  overflow: hidden;
+}
+
+.faq-image-box:hover .faqoverlayimage img {
+  transform: scale(1.1) rotate(5deg);
+  transition: ease 1s;
+}
+.faqinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.faqinnerover {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 420px;
+  background-color: white;
+  opacity: 0.2;
+  border-radius: 50%;
+  transform: scale(0);
+}
+.faq-image-box:hover .faqinnerover {
+  position: absolute;
+  z-index: 5;
+  animation: pulse ease 0.5s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.1);
+  }
+
+  100% {
+    transform: scale(2);
+  }
+}
+@media (max-width: 1200px) {
+  .faqimgrow {
+    display: flex;
+    justify-content: start;
+  }
+  .faq-area {
+    height: 1500px;
+  }
+}
+@media (max-width: 1100px) {
+  .testimonial-image-box li:first-child {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .faq-content {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .shape15 {
+    position: absolute;
+    bottom: -25%;
+    right: -30%;
+    opacity: 0.3;
+  }
+  .tesli2 {
+    width: 350px;
+  }
+  .tesli2 img {
+    width: 100%;
+  }
+  .testimonial-image-box ul {
+    padding: 0;
+  }
+}
+.testimonial-area {
+  width: 100%;
+}
+
+.testimonial-image-box ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+.tesli {
+  max-width: 800px;
+  padding-right: 20px;
+}
+.tesli2 {
+  max-width: 800px;
+  padding: 0px 20px;
+}
+
+.subtitlets {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 54px;
+  padding-bottom: 26px;
+}
+
+.subtitlets h4 {
+  color: #da3c22;
+  font-size: 18px;
+  letter-spacing: 4.8px;
+  line-height: 28px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  margin: 0px;
+}
+.subtitlets span {
+  background-color: #da3c22;
+  width: 25px;
+  height: 2px;
+  margin-left: 15px;
+}
+.sectitle h2 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 53px;
+  font-weight: 800;
+  line-height: 52px;
+  color: rgb(12, 21, 41);
+  margin-bottom: 30px;
+}
+.inner-content {
+  width: 100%;
+  padding-left: 60px;
+  padding-top: 90px;
+}
+.tes-text-box p {
+  color: #2d2929;
+  font-size: 18px;
+  line-height: 34px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+}
+.tes-client-info {
+  display: flex;
+  align-items: center;
+}
+.tes-client-info img {
+  width: 55px;
+  height: 55px;
+}
+.title-box {
+  padding-left: 15px;
+}
+.shape16 {
+  position: absolute;
+  z-index: -10;
+  bottom: 20%;
+  left: -10%;
+  opacity: 0.3;
+  animation: infinite 5s updownshape16;
+}
+@keyframes updownshape16 {
+  0% {
+    position: absolute;
+    bottom: 20%;
+  }
+  50% {
+    position: absolute;
+    bottom: 23%;
+  }
+  100% {
+    position: absolute;
+    bottom: 20%;
+  }
+}
+.team-area {
+  height: 967px;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  margin-top: 10px;
+}
+.title-holder {
+  width: 100%;
+  text-align: center;
+}
+.img-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.teaminner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.teaminner img {
+  width: 100%;
+}
+
+.social-icon {
+  position: absolute;
+}
+.single-team-item:hover .social-icon li {
+  opacity: 1;
+  z-index: 10;
+  transition: 1s;
+}
+.social-icon li {
+  opacity: 0;
+}
+.social-icon ul {
+  display: flex;
+  list-style: none;
+}
+.single-team-item {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.blackoverlay {
+  width: 100%;
+  height: 0;
+  background-color: black;
+  opacity: 0;
+  bottom: 0;
+  left: 0;
+  transition: 1s;
+  z-index: 1;
+  position: absolute;
+}
+
+.single-team-item:hover .teaminner img {
+  transform: scale(1.2);
+}
+.single-team-item:hover .blackoverlay {
+  opacity: 0.6;
+  height: 100%;
+}
+.social-icon li {
+  margin-right: 10px;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+}
+.shape17{
+  position: absolute;
+  top: -20px;
+  left: -10px;
+  opacity: 0.4;
+  animation: updownshape17 3s infinite ease;
+}
+@keyframes updownshape17 {
+  0% {
+    position: absolute;
+    top: -20px;
+  }
+  50% {
+    position: absolute;
+    top: -30px;
+  }
+  100% {
+    position: absolute;
+    top: -20px;
+  }
+}
+@media (max-width: 1200px) {
+  .slogan-content-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 1000px) {
+  .single-team-item {
+    margin-top: 50px;
+  }
+  .team-area {
+    height: 3200px;
+  }
+}
+@media (max-width: 500px) {
+  .team-area {
+    height: 2300px;
+  }
+}
+
+.slogan-area {
+  width: 100%;
+  height: 400px;
+  background-image: url("http://mehedi.asiandevelopers.com/corvex/assets/images/parallax-background/slogan-area-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: cover;
+  position: relative;
+  z-index: 0;
+}
+.slogan-overlay {
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #da3b22c3;
+  display: flex;
+  align-items: center;
+}
+.slogan-content-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.title-box h2 {
+  color: white;
+  font-family: "League Spartan", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+}
+.button-box {
+  display: flex;
+  align-items: center;
+}
+.btn-one {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: white;
+  height: 60px;
+  width: 300px;
+  padding: 0px 30px;
+}
+.btn-one i {
+  color: #da3c22;
+}
+.btn-one span {
+  color: #0c1529;
+  font-size: 17px;
+  font-weight: 800;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+}
+.counter-area {
+  height: 211px;
+  width: 100%;
+  background-color: #0c1529;
+}
+.fact-counter-box {
+  display: flex;
+  list-style: none;
+}
+.fact-counter {
+  width: 100%;
+  height: 211px;
+  display: flex;
+  align-items: center;
+}
+.fact-counter-box li {
+  width: 25%;
+  text-align: center;
+}
+.fact-counter-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.fact-counter-box li h2 {
+  color: #da3c22;
+  font-family: "League Spartan", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+}
+.fact-counter-box li i {
+  color: #da3c22;
+  font-family: "League Spartan", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+}
+.fact-counter-box h5 {
+  color: white;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+}
+.blog-area {
+  width: 100%;
+  height: 1075px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+@media (max-width: 1000px) {
+  .blog-area {
+    height: 2600px;
+  }
+  .shape15 {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .blog-area {
+    height: 2100px;
+  }
+}
+.single-blog-item {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.redoverlay {
+  width: 100%;
+  height: 0;
+  background-color: #da3c22;
+  opacity: 0;
+  bottom: 0;
+  left: 0;
+  transition: 1s;
+  z-index: 1;
+  position: absolute;
+}
+
+.single-blog-item:hover .teaminner img {
+  transform: scale(1.2);
+}
+.single-blog-item:hover .redoverlay {
+  opacity: 0.6;
+  height: 100%;
+}
+
+.title-holder2 {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.blogbutton {
+  background-color: rgb(12, 21, 41);
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  padding: 0px 40px;
+  width: 181px;
+  height: 60px;
+  line-height: 60px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  border: none;
+}
+.title-holder2 p {
+  color: rgb(128, 128, 128);
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+}
+.title-holder2 h3:hover {
+  transition: 0.3s ease;
+  cursor: pointer;
+  color: #da3c22;
+}
+.title-holder2 h3 {
+  color: rgb(12, 21, 41);
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  font-family: "League Spartan", sans-serif;
+}
+.footer-bg {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-attachment: scroll;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-image: url("http://mehedi.asiandevelopers.com/corvex/assets/images/shape/footer-bg-shape.png");
+}
+
+.footer-area {
+  position: relative;
+  padding: 0px 0px 0px;
+  z-index: 1;
+}
+
+.footer {
+  position: relative;
+  padding: 245px 0 100px;
+  z-index: 1;
+  height: 710px;
+}
+@media (max-width: 1000px) {
+  .footer {
+    height: 1062px;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    height: 1377px;
+  }
+}
+.footershape1 {
+  position: absolute;
+  top: 175px;
+  left: 100px;
+  opacity: 0.15;
+  animation: grow2 infinite 5s ease;
+}
+.footershape2 {
+  position: absolute;
+  left: 0;
+  bottom: -35px;
+  opacity: 0.15;
+  right: 0;
+  text-align: center;
+  animation: updownfooter infinite 3s ease;
+}
+.footershape3 {
+  position: absolute;
+  top: 170px;
+  right: 55px;
+  opacity: 0.15;
+  animation: wave2 infinite 10s ease;
+}
+
+@keyframes wave2 {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes grow2 {
+  0% {
+    transform: scale(0, 0);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes updownfooter {
+  0% {
+    position: absolute;
+    bottom: -35px;
+  }
+  50% {
+    position: absolute;
+    bottom: -30px;
+  }
+  100% {
+    position: absolute;
+    bottom: -35px;
+  }
+}
+.single-footer-widget {
+  position: relative;
+  overflow: hidden;
+}
+.our-company-info .text-box {
+  position: relative;
+  padding-top: 26px;
+  margin-bottom: 22px;
+}
+.text-box p {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+}
+.footer-contact-info ul li {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+}
+.footer-contact-info ul li .icon {
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+.footer-contact-info li i {
+  position: relative;
+  top: 5px;
+  font-size: 22px;
+  color: #da3c22;
+}
+.footer-contact-info .text p {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  margin: 0;
+}
+a,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+.footer-contact-info .text a {
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 28px;
+}
+.single-footer-widget .title {
+  margin-top: 0px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  height: 80px;
+}
+.single-footer-widget .title h2 {
+  color: #ffffff;
+  font-size: 25px;
+  line-height: 28.6px;
+  font-weight: 700;
+  font-family: "League Spartan", sans-serif;
+  text-transform: capitalize;
+}
+.footer-widget-links1 li {
+  position: relative;
+  display: block;
+  margin-bottom: 14px;
+}
+.footer-widget-links1 li a {
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 500ms ease;
+  line-height: 22px;
+}
+.top-selling-product {
+  position: relative;
+  display: block;
+  margin-top: 7px;
+}
+.top-selling-product li .img-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+}
+.img-box img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.top-selling-product li {
+  position: relative;
+  display: block;
+  padding-left: 80px;
+  min-height: 80px;
+  margin-bottom: 20px;
+}
+.top-selling-product li .title-box {
+  position: relative;
+  display: block;
+  padding-left: 18px;
+}
+.top-selling-product li .title-box h5 {
+  position: relative;
+  top: -4px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+}
+.top-selling-product li .title-box h5 a {
+  color: #ffffff;
+}
+.top-selling-product li .title-box .review-box {
+  position: relative;
+  display: block;
+  margin-top: 3px;
+  margin-bottom: 7px;
+}
+.top-selling-product li .title-box .review-box a {
+  color: #fbb419;
+  font-size: 14px;
+}
+.top-selling-product li .title-box .rate-box p {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 400;
+  margin: 0;
+}
+.top-selling-product li .title-box .rate-box p del {
+  color: #ffffff;
+  opacity: 0.7;
+}
+.footer-subscribe-box {
+  position: relative;
+  display: block;
+  background: #0c1529;
+  padding-bottom: 100px;
+  height: 225px;
+}
+.subscribe-content-box {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px 30px 30px;
+}
+
+.subscribe-content-box .subscribe-title h3 {
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 800;
+  padding: 12px 0 13px;
+}
+.subscribe-form {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.subscribe-box {
+  position: relative;
+  display: block;
+  max-width: 560px;
+  width: 100%;
+}
+.subscribe-form input[type="email"] {
+  position: relative;
+  display: block;
+  max-width: 320px;
+  width: 100%;
+  height: 55px;
+  background: transparent;
+  border: 0px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Rubik", sans-serif;
+}
+
+.subscribe-form button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #da3c22;
+  line-height: 55px;
+  padding-left: 45px;
+  padding-right: 45px;
+  display: inline-block;
+  color: #ffffff;
+  border: none;
+  font-size: 17px;
+  line-height: 60px;
+  font-weight: 500;
+  text-transform: capitalize;
+  border-radius: 0px;
+}
+.footer-bottom {
+  position: relative;
+  display: block;
+  background: #091020;
+  padding: 25px 0;
+  height: 90px;
+}
+.footer-bottom .outer-box-footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.copyright-text p {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+}
+.copyright-text a {
+  color: #da3c22;
+}
+.copyright-text a:hover {
+  color: white;
+  transition: 0.3s;
+}
+
+.footer-social-link ul li {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+.footer-social-link ul li a {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 40px;
+  text-align: center;
+  z-index: 1;
+}
+.footer-menu-style1 ul li {
+  position: relative;
+  display: inline-block;
+  padding-right: 16px;
+  margin-right: 15px;
+}
+.footer-menu-style1 ul li a {
+  color: #ffffff;
+  font-size: 16px;
+}
+.footer-menu-style1 ul a:hover {
+  color: #da3c22;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .footer-bottom {
+    height: 1377px;
+  }
+}
+@media (max-width: 991px) {
+  .outer-box-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-bottom {
+    height: 172px;
+  }
+}
