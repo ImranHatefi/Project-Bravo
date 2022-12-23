@@ -203,6 +203,9 @@
   visibility: hidden;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+.testimoniallink{
+  color: #000000;
+}
 .dropdownmenu4 {
   width: 45%;
   position: absolute;
@@ -514,6 +517,11 @@
   border: none;
   animation: fadeInup 3s ease;
 }
+.content-btn:hover button{
+background-color: white;
+color: #0c1529;
+transition: 0.5s;
+}
 .main-slide-right-text {
   max-width: 670px;
   width: 100%;
@@ -525,6 +533,7 @@
   right: 12%;
   display: flex;
   animation: fadeInRight 1s ease;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 @media (max-width: 1300px) {
   .main-slide-right-text {
@@ -611,7 +620,7 @@
 .featuresection1 {
   width: 100%;
   height: 925px;
-  padding-top: 150px;
+  padding-top: 175px;
   padding-bottom: 100px;
 }
 @media (max-width: 1000px) {
@@ -1709,6 +1718,27 @@
   justify-content: center;
   background-color: white;
   border-radius: 50%;
+}
+.shape17{
+  position: absolute;
+  top: -20px;
+  left: -10px;
+  opacity: 0.4;
+  animation: updownshape17 3s infinite ease;
+}
+@keyframes updownshape17 {
+  0% {
+    position: absolute;
+    top: -20px;
+  }
+  50% {
+    position: absolute;
+    top: -30px;
+  }
+  100% {
+    position: absolute;
+    top: -20px;
+  }
 }
 @media (max-width: 1200px) {
   .slogan-content-box {
