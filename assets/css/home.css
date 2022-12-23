@@ -147,12 +147,126 @@
 }
 .navigation {
   width: 580px;
+  position: relative;
 }
 .navigation ul {
   list-style: none;
   display: flex;
   margin: 0px;
 }
+.navli {
+  height: 100px;
+  padding: 33px 0px;
+}
+.dropdownmenu {
+  width: 33%;
+  position: absolute;
+  cursor: pointer;
+  top: 87px;
+  left: -10px;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  z-index: 10;
+  padding: 20px 10px;
+  background-color: white;
+  visibility: hidden;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.dropdownmenu2 {
+  width: 36%;
+  position: absolute;
+  cursor: pointer;
+  top: 87px;
+  left: 190px;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  z-index: 10;
+  padding: 20px 10px;
+  background-color: white;
+  visibility: hidden;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.dropdownmenu3 {
+  width: 45%;
+  position: absolute;
+  cursor: pointer;
+  top: 87px;
+  left: 280px;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  z-index: 10;
+  padding: 20px 10px;
+  background-color: white;
+  visibility: hidden;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.dropdownmenu4 {
+  width: 45%;
+  position: absolute;
+  cursor: pointer;
+  top: 87px;
+  left: 365px;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  z-index: 10;
+  padding: 20px 10px;
+  background-color: white;
+  visibility: hidden;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.dropdownmenu li:hover {
+  color: #da3c22;
+  margin-left: 10px;
+  transition: 0.5s;
+}
+.home:hover .dropdownmenu {
+  visibility: visible;
+  animation: fadeInupdropd 0.7s;
+}
+.dropdownmenu2 li:hover {
+  color: #da3c22;
+  margin-left: 10px;
+  transition: 0.5s;
+}
+.shop:hover .dropdownmenu2 {
+  visibility: visible;
+  animation: fadeInupdropd 0.7s;
+}
+.dropdownmenu3 li:hover {
+  color: #da3c22;
+  margin-left: 10px;
+  transition: 0.5s;
+}
+.pages:hover .dropdownmenu3 {
+  visibility: visible;
+  animation: fadeInupdropd 0.7s;
+}
+
+.dropdownmenu4 li:hover {
+  color: #da3c22;
+  margin-left: 10px;
+  transition: 0.5s;
+}
+.news:hover .dropdownmenu4 {
+  visibility: visible;
+  animation: fadeInupdropd 0.7s;
+}
+
+@keyframes fadeInupdropd {
+  0% {
+    transform: translate(0px, 60px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px, 0);
+    opacity: 1;
+  }
+}
+
 .outer {
   display: flex;
 }
@@ -2166,7 +2280,7 @@ a:focus {
   color: #ffffff;
   font-size: 16px;
 }
-.footer-menu-style1 ul a:hover{
+.footer-menu-style1 ul a:hover {
   color: #da3c22;
   transition: 0.3s;
 }
@@ -2176,13 +2290,14 @@ a:focus {
     height: 1377px;
   }
 }
-@media (max-width: 991px){
+@media (max-width: 991px) {
   .outer-box-footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;}
-    .footer-bottom {
-      height: 172px;
-    }
+    align-items: center;
   }
+  .footer-bottom {
+    height: 172px;
+  }
+}
