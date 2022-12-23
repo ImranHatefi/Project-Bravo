@@ -459,6 +459,9 @@
     position: absolute;
     bottom: -10%;
   }
+  .header-right {
+    display: none;
+  }
 }
 
 .mstext-box {
@@ -702,16 +705,19 @@
 }
 .aboutstyle-img {
   display: block;
-  max-width: 530px;
   height: 595px;
   width: 100%;
   padding-left: 35px;
   position: relative;
 }
 .mainimg {
-  position: absolute;
-  top: 0;
+  position: relative;
+  width: 420px;
 }
+.mainimg img {
+  width: 100%;
+}
+
 .shape1 {
   position: absolute;
   top: -10%;
@@ -748,10 +754,14 @@
 }
 .about-image-2 {
   border: 12px white solid;
+  width: 320px;
   position: absolute;
-  bottom: -10%;
-  right: 4%;
+  bottom: -50px;
+  right: 10px;
   animation: grow 3s;
+}
+.about-image-2 img {
+  width: 100%;
 }
 
 @keyframes lefttoright {
@@ -970,21 +980,44 @@
     top: -25%;
     right: -15%;
   }
-}
-@media (max-width: 1100px) {
   .outerlayer {
     height: 1900px;
   }
+}
+@media (max-width: 1100px) {
   .productstyle-area {
     padding-top: 75px;
   }
 }
+@media (max-width: 1000px) {
+  .singleproduct {
+    margin-top: 10px;
+  }
+}
 @media (max-width: 768px) {
   .outerlayer {
-    height: 3370px;
+    height: 2800px;
   }
   .productstyle-area {
     padding-top: 0px;
+  }
+  .mainimg {
+    position: relative;
+    width: 300px;
+  }
+  .mainimg img {
+    width: 100%;
+  }
+  .about-image-2 {
+    border: 12px white solid;
+    width: 220px;
+    position: absolute;
+    bottom: 200px;
+    right: 10px;
+    animation: grow 3s;
+  }
+  .about-image-2 img {
+    width: 100%;
   }
 }
 .outerlayer {
@@ -1273,7 +1306,7 @@
   padding-left: 80px;
   padding-bottom: 215px;
 }
-.faqinner {
+.faqinnerover {
   position: absolute;
 }
 .shape13 {
@@ -1367,28 +1400,18 @@
   .faq-area {
     height: 1500px;
   }
-  .tdis{
-    flex-direction: column;
-  }
-  .testimonial-image-box {
-    width: 100%;
-  }
-  .testimonial-text{
-    width: 100%;
-  }
-  .testimonial-area{height: 1400px;
-  margin-bottom: 300px;}
 }
 @media (max-width: 1100px) {
-  .testimonial-image-box {
-    width: 100%;
+  .testimonial-image-box li:first-child {
+    display: none;
   }
-  .testimonial-text{
-    width: 100%;
-  }
-  .testimonial-area{height: 1400px;
-  margin-bottom: 300px;}
 }
+@media (max-width: 1000px) {
+  .faq-content {
+    margin-bottom: 50px;
+  }
+}
+
 @media (max-width: 768px) {
   .shape15 {
     position: absolute;
@@ -1396,50 +1419,35 @@
     right: -30%;
     opacity: 0.3;
   }
-  .testimonial-image-box ul{
-    display: flex;
-    flex-wrap: wrap;
+  .tesli2 {
+    width: 350px;
   }
-  .testimonial-area{height: 2000px;}
+  .tesli2 img {
+    width: 100%;
+  }
+  .testimonial-image-box ul {
+    padding: 0;
+  }
 }
-
 .testimonial-area {
   width: 100%;
-  height: 608px;
 }
-.testimonial-image-box {
-  width: 50%;
-  height: 490px;
-}
+
 .testimonial-image-box ul {
   list-style: none;
   display: flex;
   margin: 0;
 }
-.tdis {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-}
-.tesli img {
-  width: 360px;
-  height: 480px;
-}
-.tesli2 img {
-  width: 360px;
-  height: 480px;
-}
+
 .tesli {
+  max-width: 800px;
   padding-right: 20px;
 }
 .tesli2 {
+  max-width: 800px;
   padding: 0px 20px;
 }
-.testimonial-text {
-  width: 50%;
-  height: 490px;
 
-}
 .subtitlets {
   width: 100%;
   display: flex;
@@ -1472,7 +1480,7 @@
   margin-bottom: 30px;
 }
 .inner-content {
-  width: 600px;
+  width: 100%;
   padding-left: 60px;
   padding-top: 90px;
 }
@@ -1496,6 +1504,7 @@
 }
 .shape16 {
   position: absolute;
+  z-index: -10;
   bottom: 20%;
   left: -10%;
   opacity: 0.3;
@@ -1519,43 +1528,43 @@
   height: 967px;
   padding-top: 150px;
   padding-bottom: 100px;
-  margin-top: 10px
+  margin-top: 10px;
 }
-.title-holder{
+.title-holder {
   width: 100%;
   text-align: center;
 }
-.img-holder{
+.img-holder {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-.teaminner{
+.teaminner {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-.teaminner img{
+.teaminner img {
   width: 100%;
 }
 
-.social-icon{
+.social-icon {
   position: absolute;
 }
-.single-team-item:hover .social-icon li{
+.single-team-item:hover .social-icon li {
   opacity: 1;
   z-index: 10;
   transition: 1s;
 }
-.social-icon li{
- opacity: 0;
+.social-icon li {
+  opacity: 0;
 }
-.social-icon ul{
+.social-icon ul {
   display: flex;
   list-style: none;
 }
-.single-team-item{
+.single-team-item {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .blackoverlay {
@@ -1570,14 +1579,14 @@
   position: absolute;
 }
 
-.single-team-item:hover .teaminner img{
+.single-team-item:hover .teaminner img {
   transform: scale(1.2);
 }
-.single-team-item:hover .blackoverlay{
+.single-team-item:hover .blackoverlay {
   opacity: 0.6;
   height: 100%;
-  }
-.social-icon li{
+}
+.social-icon li {
   margin-right: 10px;
   width: 42px;
   height: 42px;
@@ -1588,24 +1597,27 @@
   border-radius: 50%;
 }
 @media (max-width: 1200px) {
-  .slogan-content-box{
+  .slogan-content-box {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
 }
 @media (max-width: 1000px) {
-  .single-team-item{
+  .single-team-item {
     margin-top: 50px;
   }
-  .team-area{
-    height: 2600px;
+  .team-area {
+    height: 3200px;
   }
 }
-@media (max-width: 768px) {
-
+@media (max-width: 500px) {
+  .team-area {
+    height: 2300px;
+  }
 }
-.slogan-area{
+
+.slogan-area {
   width: 100%;
   height: 400px;
   background-image: url("http://mehedi.asiandevelopers.com/corvex/assets/images/parallax-background/slogan-area-bg.jpg");
@@ -1613,9 +1625,8 @@
   background-position: cover;
   position: relative;
   z-index: 0;
-  
 }
-.slogan-overlay{
+.slogan-overlay {
   width: 100%;
   height: 400px;
   position: absolute;
@@ -1626,22 +1637,22 @@
   display: flex;
   align-items: center;
 }
-.slogan-content-box{
+.slogan-content-box {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.title-box h2{
+.title-box h2 {
   color: white;
   font-family: "League Spartan", sans-serif;
   font-size: 48px;
   font-weight: 800;
 }
-.button-box{
+.button-box {
   display: flex;
   align-items: center;
 }
-.btn-one{
+.btn-one {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -1650,67 +1661,79 @@
   width: 300px;
   padding: 0px 30px;
 }
-.btn-one i{
+.btn-one i {
   color: #da3c22;
 }
-.btn-one span{
+.btn-one span {
   color: #0c1529;
   font-size: 17px;
   font-weight: 800;
   cursor: pointer;
   font-family: "Rubik", sans-serif;
 }
-.counter-area{
+.counter-area {
   height: 211px;
   width: 100%;
   background-color: #0c1529;
 }
-.fact-counter-box{
+.fact-counter-box {
   display: flex;
   list-style: none;
 }
-.fact-counter{
+.fact-counter {
   width: 100%;
   height: 211px;
   display: flex;
   align-items: center;
- 
 }
-.fact-counter-box li{
+.fact-counter-box li {
   width: 25%;
   text-align: center;
 }
-.fact-counter-box{
+.fact-counter-box {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
-.fact-counter-box li h2{
+.fact-counter-box li h2 {
   color: #da3c22;
   font-family: "League Spartan", sans-serif;
   font-size: 48px;
   font-weight: 800;
 }
-.fact-counter-box li i{
+.fact-counter-box li i {
   color: #da3c22;
   font-family: "League Spartan", sans-serif;
   font-size: 48px;
   font-weight: 800;
 }
-.fact-counter-box h5{
+.fact-counter-box h5 {
   color: white;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
   font-family: "Rubik", sans-serif;
 }
-.blog-area{
+.blog-area {
   width: 100%;
   height: 1075px;
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.single-blog-item{
+@media (max-width: 1000px) {
+  .blog-area {
+    height: 2600px;
+  }
+  .shape15 {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .blog-area {
+    height: 2100px;
+  }
+}
+.single-blog-item {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .redoverlay {
@@ -1725,22 +1748,22 @@
   position: absolute;
 }
 
-.single-blog-item:hover .teaminner img{
+.single-blog-item:hover .teaminner img {
   transform: scale(1.2);
 }
-.single-blog-item:hover .redoverlay{
+.single-blog-item:hover .redoverlay {
   opacity: 0.6;
   height: 100%;
-  }
+}
 
-.title-holder2{
+.title-holder2 {
   display: flex;
   text-align: left;
   flex-direction: column;
   padding: 30px;
 }
 
-.blogbutton{
+.blogbutton {
   background-color: rgb(12, 21, 41);
   color: rgb(255, 255, 255);
   font-size: 17px;
@@ -1752,7 +1775,7 @@
   font-family: "Rubik", sans-serif;
   border: none;
 }
-.title-holder2 p{
+.title-holder2 p {
   color: rgb(128, 128, 128);
   font-size: 16px;
   line-height: 28px;
@@ -1764,10 +1787,402 @@
   cursor: pointer;
   color: #da3c22;
 }
-.title-holder2 h3{
+.title-holder2 h3 {
   color: rgb(12, 21, 41);
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   font-family: "League Spartan", sans-serif;
 }
+.footer-bg {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-attachment: scroll;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-image: url("http://mehedi.asiandevelopers.com/corvex/assets/images/shape/footer-bg-shape.png");
+}
+
+.footer-area {
+  position: relative;
+  padding: 0px 0px 0px;
+  z-index: 1;
+}
+
+.footer {
+  position: relative;
+  padding: 245px 0 100px;
+  z-index: 1;
+  height: 710px;
+}
+@media (max-width: 1000px) {
+  .footer {
+    height: 1062px;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    height: 1377px;
+  }
+}
+.footershape1 {
+  position: absolute;
+  top: 175px;
+  left: 100px;
+  opacity: 0.15;
+  animation: grow2 infinite 5s ease;
+}
+.footershape2 {
+  position: absolute;
+  left: 0;
+  bottom: -35px;
+  opacity: 0.15;
+  right: 0;
+  text-align: center;
+  animation: updownfooter infinite 3s ease;
+}
+.footershape3 {
+  position: absolute;
+  top: 170px;
+  right: 55px;
+  opacity: 0.15;
+  animation: wave2 infinite 10s ease;
+}
+
+@keyframes wave2 {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes grow2 {
+  0% {
+    transform: scale(0, 0);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes updownfooter {
+  0% {
+    position: absolute;
+    bottom: -35px;
+  }
+  50% {
+    position: absolute;
+    bottom: -30px;
+  }
+  100% {
+    position: absolute;
+    bottom: -35px;
+  }
+}
+.single-footer-widget {
+  position: relative;
+  overflow: hidden;
+}
+.our-company-info .text-box {
+  position: relative;
+  padding-top: 26px;
+  margin-bottom: 22px;
+}
+.text-box p {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+}
+.footer-contact-info ul li {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+}
+.footer-contact-info ul li .icon {
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+.footer-contact-info li i {
+  position: relative;
+  top: 5px;
+  font-size: 22px;
+  color: #da3c22;
+}
+.footer-contact-info .text p {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  margin: 0;
+}
+a,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+.footer-contact-info .text a {
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 28px;
+}
+.single-footer-widget .title {
+  margin-top: 0px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  height: 80px;
+}
+.single-footer-widget .title h2 {
+  color: #ffffff;
+  font-size: 25px;
+  line-height: 28.6px;
+  font-weight: 700;
+  font-family: "League Spartan", sans-serif;
+  text-transform: capitalize;
+}
+.footer-widget-links1 li {
+  position: relative;
+  display: block;
+  margin-bottom: 14px;
+}
+.footer-widget-links1 li a {
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 500ms ease;
+  line-height: 22px;
+}
+.top-selling-product {
+  position: relative;
+  display: block;
+  margin-top: 7px;
+}
+.top-selling-product li .img-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+}
+.img-box img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.top-selling-product li {
+  position: relative;
+  display: block;
+  padding-left: 80px;
+  min-height: 80px;
+  margin-bottom: 20px;
+}
+.top-selling-product li .title-box {
+  position: relative;
+  display: block;
+  padding-left: 18px;
+}
+.top-selling-product li .title-box h5 {
+  position: relative;
+  top: -4px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+}
+.top-selling-product li .title-box h5 a {
+  color: #ffffff;
+}
+.top-selling-product li .title-box .review-box {
+  position: relative;
+  display: block;
+  margin-top: 3px;
+  margin-bottom: 7px;
+}
+.top-selling-product li .title-box .review-box a {
+  color: #fbb419;
+  font-size: 14px;
+}
+.top-selling-product li .title-box .rate-box p {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 400;
+  margin: 0;
+}
+.top-selling-product li .title-box .rate-box p del {
+  color: #ffffff;
+  opacity: 0.7;
+}
+.footer-subscribe-box {
+  position: relative;
+  display: block;
+  background: #0c1529;
+  padding-bottom: 100px;
+  height: 225px;
+}
+.subscribe-content-box {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px 30px 30px;
+}
+
+.subscribe-content-box .subscribe-title h3 {
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 800;
+  padding: 12px 0 13px;
+}
+.subscribe-form {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.subscribe-box {
+  position: relative;
+  display: block;
+  max-width: 560px;
+  width: 100%;
+}
+.subscribe-form input[type="email"] {
+  position: relative;
+  display: block;
+  max-width: 320px;
+  width: 100%;
+  height: 55px;
+  background: transparent;
+  border: 0px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Rubik", sans-serif;
+}
+
+.subscribe-form button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #da3c22;
+  line-height: 55px;
+  padding-left: 45px;
+  padding-right: 45px;
+  display: inline-block;
+  color: #ffffff;
+  border: none;
+  font-size: 17px;
+  line-height: 60px;
+  font-weight: 500;
+  text-transform: capitalize;
+  border-radius: 0px;
+}
+.footer-bottom {
+  position: relative;
+  display: block;
+  background: #091020;
+  padding: 25px 0;
+  height: 90px;
+}
+.footer-bottom .outer-box-footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.copyright-text p {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+}
+.copyright-text a {
+  color: #da3c22;
+}
+.copyright-text a:hover {
+  color: white;
+  transition: 0.3s;
+}
+
+.footer-social-link ul li {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+.footer-social-link ul li a {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 40px;
+  text-align: center;
+  z-index: 1;
+}
+.footer-menu-style1 ul li {
+  position: relative;
+  display: inline-block;
+  padding-right: 16px;
+  margin-right: 15px;
+}
+.footer-menu-style1 ul li a {
+  color: #ffffff;
+  font-size: 16px;
+}
+.footer-menu-style1 ul a:hover{
+  color: #da3c22;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .footer-bottom {
+    height: 1377px;
+  }
+}
+@media (max-width: 991px){
+  .outer-box-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+    .footer-bottom {
+      height: 172px;
+    }
+  }
